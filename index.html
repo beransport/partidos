@@ -1,9 +1,7 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Planificador CV Cangas</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
-<style data-app>
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Partidos CV Cangas de Onís</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
 /* Layout: cabecera fija con pestañas; tablero de jornadas en rejilla (una tarjeta por fecha) como zonas de arrastre */
 :root{
   --bg:#f3f5f4; --surface:#ffffff; --surface2:#eaefed; --ink:#14201c; --muted:#5b6b65; --line:#d5ddd9;
@@ -195,952 +193,134 @@ h3.resd{font-family:var(--display);font-size:18px;margin:16px 0 4px;text-transfo
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:9px 14px;border-radius:8px;font-size:14px;z-index:30}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 @media (max-width:480px){h1{font-size:22px}.board{grid-template-columns:1fr}}
-</style>
-<div id="app"></div>
-<script type="application/json" id="state">{"v": 6, "savedAt": 1793828256284, "llegada": {"peq": 30, "gra": 45}, "viaje": {}, "franjasSemana": ["17:00", "18:30", "20:00"], "balance": true, "pistas": [{"id": "l1", "name": "Tercio lateral 1", "teams": [], "exc": false}, {"id": "l2", "name": "Tercio lateral 2", "teams": [], "exc": false}, {"id": "tc", "name": "Tercio central", "teams": ["MB", "BE", "AA", "AB"], "exc": false}, {"id": "fr", "name": "Frontón", "teams": ["MB", "BE", "AA", "AB"], "exc": true}], "franjas": ["09:45", "10:30", "11:00", "12:00", "13:00"], "t": {"peq": {"d": 60, "max": 75, "w1": 45, "w2": 15}, "gra": {"d": 100, "max": 120, "w1": 45, "w2": 20}}, "coaches": [{"id": "c1", "wk": [1, 2, 3, 4, 5], "name": "Dani", "pref": ["C1", "IN", "C2"], "otros": "si", "emerg": false, "off": [], "alt": {"on": false, "start": ""}, "busy": [], "emT": []}, {"id": "c2", "name": "Manuela", "pref": ["IN"], "otros": "si", "emerg": false, "off": [], "alt": {"on": true, "start": ""}, "wk": [1, 2, 3, 4, 5], "busy": [{"d": "2026-11-07", "desde": "00:00", "hasta": "15:00"}, {"d": "2026-11-21", "desde": "00:00", "hasta": "15:00"}, {"d": "2026-12-19", "desde": "00:00", "hasta": "15:00"}, {"d": "2026-12-05", "desde": "00:00", "hasta": "15:00"}], "emT": []}, {"id": "c3", "name": "Lucía", "pref": ["BE", "AA", "AB", "MB"], "otros": "ultimo", "emerg": false, "off": ["2026-11-28", "2026-12-19"], "wk": [1, 2, 3, 4, 5], "alt": {"on": false, "start": ""}, "busy": [], "emT": []}, {"id": "c4", "name": "Hugo", "pref": ["BE", "AA", "AB", "MB"], "otros": "ultimo", "emerg": false, "off": [], "wk": [1, 2, 3, 4, 5], "alt": {"on": false, "start": ""}, "busy": [], "emT": []}, {"id": "c5", "name": "Paula Sánchez", "pref": ["BE", "AA", "AB", "MB"], "otros": "ultimo", "emerg": false, "off": [], "wk": [1, 2, 3, 4, 5], "alt": {"on": false, "start": ""}, "busy": [], "emT": ["C2", "IN", "C1"]}, {"id": "c6", "name": "Elena", "pref": [], "otros": "si", "emerg": true, "off": [], "wk": [1, 2, 3, 4, 5], "alt": {"on": false, "start": ""}, "busy": [], "emT": []}, {"id": "c7", "name": "Ari", "pref": [], "otros": "si", "emerg": true, "off": [], "wk": [1, 2, 3, 4, 5], "alt": {"on": false, "start": ""}, "busy": [], "emT": []}], "matches": [{"id": "m1", "team": "IN", "home": true, "rival": "CV OVIEDO A", "date": "2026-10-24", "orig": "2026-10-24", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": true}, {"id": "m2", "team": "C1", "home": true, "rival": "CV OVIEDO A", "date": "2026-10-24", "orig": "2026-10-24", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m3", "team": "AA", "home": true, "rival": "Derbi del club", "date": "2026-11-04", "orig": "2026-11-07", "pista": "l1", "hora": "17:00", "note": "", "team2": "AB", "estado": "comunicado", "coaches": ["c3", "c4"], "coachLock": false, "origHome": true}, {"id": "m4", "team": "IN", "home": true, "rival": "CID JOVELLANOS A", "date": "2026-11-07", "orig": "2026-11-07", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m5", "team": "C1", "home": true, "rival": "CID JOVELLANOS A", "date": "2026-11-07", "orig": "2026-11-07", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m6", "team": "C2", "home": false, "rival": "CD Nava Voley", "date": "2026-11-07", "orig": "2026-11-07", "pista": "", "hora": "", "note": "En alarma: obras en el polideportivo del CD Nava. Pendiente de confirmar si se juega.", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false, "duda": "obras en el polideportivo de Nava"}, {"id": "m7", "team": "BE", "home": true, "rival": "C.P. La Fresneda", "date": "2026-11-14", "orig": "2026-11-14", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m8", "team": "AB", "home": true, "rival": "Peña Tú A", "date": "2026-11-14", "orig": "2026-11-14", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": true}, {"id": "m9", "team": "AA", "home": false, "rival": "CP Rio Sella A", "date": "2026-11-11", "orig": "2026-11-14", "pista": "", "hora": "17:00", "note": "Se juega en el C.P. Río Sella; después, el partido contra Río Sella B.", "estado": "propuesto", "coaches": ["c4"], "coachLock": false, "doble": true, "origHome": false}, {"id": "m10", "team": "IN", "home": false, "rival": "RGC COVADONGA A", "date": "2026-11-14", "orig": "2026-11-14", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m11", "team": "C1", "home": false, "rival": "RGC COVADONGA A", "date": "2026-11-14", "orig": "2026-11-14", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m12", "team": "C2", "home": true, "rival": "CD Creimi F", "date": "2026-11-14", "orig": "2026-11-14", "pista": "", "hora": "", "note": "Creimi pide invertir sede: se juega aquí y la vuelta (20 feb) allí.", "estado": "pendiente", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m13", "team": "AA", "home": false, "rival": "CP Rio Sella B", "date": "2026-11-11", "orig": "2026-11-21", "pista": "", "hora": "18:00", "note": "Se juega en el C.P. Río Sella, seguido del partido contra Río Sella A.", "estado": "pendiente", "coaches": ["c5"], "coachLock": false, "doble": true, "origHome": true}, {"id": "m14", "team": "IN", "home": true, "rival": "IES LLANES P", "date": "2026-11-21", "orig": "2026-11-21", "pista": "", "hora": "", "note": "Falta una titular importante del 18 al 25 de nov. Opciones: martes 17 nov (entre semana, Llanes a 40 min) o jueves 26 nov; o sábados libres 5 dic, 9 ene, 6 feb, 27 mar. Propuesta: martes 17 nov.", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m15", "team": "C1", "home": true, "rival": "IES LLANES P", "date": "2026-11-21", "orig": "2026-11-21", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m16", "team": "C2", "home": true, "rival": "Club Voleibol Noreña B", "date": "2026-11-21", "orig": "2026-11-21", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m17", "team": "BE", "home": false, "rival": "Valdellera", "date": "2026-11-21", "orig": "2026-11-21", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m18", "team": "AB", "home": false, "rival": "Valdellera", "date": "2026-11-21", "orig": "2026-11-21", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": false}, {"id": "m19", "team": "IN", "home": false, "rival": "Col. Inmaculada A", "date": "2026-11-22", "orig": "2026-11-22", "pista": "", "hora": "", "note": "Falta una titular importante del 18 al 25 de nov. Opciones: sábado 5 dic (puente; ese día no juega nadie del club), 9 ene o 6 feb. Propuesta: 5 dic, o 9 ene si Inmaculada no acepta.", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m20", "team": "C1", "home": false, "rival": "Col. Inmaculada A", "date": "2026-11-22", "orig": "2026-11-22", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m21", "team": "BE", "home": true, "rival": "Peña Tú A", "date": "2026-11-28", "orig": "2026-11-28", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": true}, {"id": "m22", "team": "AA", "home": true, "rival": "Peña Tú A", "date": "2026-11-28", "orig": "2026-11-28", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": true}, {"id": "m23", "team": "AB", "home": true, "rival": "CP Rio Sella C", "date": "2026-11-28", "orig": "2026-11-28", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": true}, {"id": "m24", "team": "IN", "home": true, "rival": "CLUB NÁUTICO CARREÑO A", "date": "2026-11-28", "orig": "2026-11-28", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m25", "team": "C1", "home": true, "rival": "AD LA CURTIDORA A", "date": "2026-11-28", "orig": "2026-11-28", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m26", "team": "C2", "home": false, "rival": "C.V. Siero B", "date": "2026-11-28", "orig": "2026-11-28", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m27", "team": "IN", "home": true, "rival": "RGC COVADONGA B", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": true}, {"id": "m28", "team": "C1", "home": true, "rival": "RGC COVADONGA B", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m29", "team": "C2", "home": true, "rival": "IES Llanes D", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m30", "team": "BE", "home": false, "rival": "CP Peña TU C", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m31", "team": "AA", "home": false, "rival": "Valdellera", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m32", "team": "AB", "home": false, "rival": "CP Peña TU C", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m33", "team": "BE", "home": true, "rival": "Peña Tú B", "date": "2026-12-19", "orig": "2026-12-19", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": true}, {"id": "m34", "team": "AA", "home": true, "rival": "CP Rio Sella C", "date": "2026-12-19", "orig": "2026-12-19", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": true}, {"id": "m35", "team": "AB", "home": true, "rival": "CP Valdellera 9X18", "date": "2026-12-19", "orig": "2026-12-19", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": true}, {"id": "m36", "team": "C2", "home": true, "rival": "CD Creimi B", "date": "2026-12-19", "orig": "2026-12-19", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": true}, {"id": "m37", "team": "IN", "home": false, "rival": "SAN IGNACIO B", "date": "2026-12-19", "orig": "2026-12-19", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m38", "team": "C1", "home": false, "rival": "SAN IGNACIO B", "date": "2026-12-19", "orig": "2026-12-19", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m39", "team": "BE", "home": true, "rival": "Ceip L'ablanu", "date": "2027-01-16", "orig": "2027-01-16", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m40", "team": "IN", "home": true, "rival": "SAN IGNACIO A", "date": "2027-01-16", "orig": "2027-01-16", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": true}, {"id": "m41", "team": "C1", "home": true, "rival": "SAN IGNACIO A", "date": "2027-01-16", "orig": "2027-01-16", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m42", "team": "C2", "home": true, "rival": "IES Llanes C", "date": "2027-01-16", "orig": "2027-01-16", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m43", "team": "AA", "home": false, "rival": "CP Peña TU C", "date": "2027-01-16", "orig": "2027-01-16", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m44", "team": "AB", "home": false, "rival": "Peña Tú B", "date": "2027-01-16", "orig": "2027-01-16", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": false}, {"id": "m45", "team": "AA", "home": true, "rival": "CP Valdellera 9X18", "date": "2027-01-23", "orig": "2027-01-23", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": true}, {"id": "m46", "team": "BE", "home": false, "rival": "Colegio Internacional Meres", "date": "2027-01-23", "orig": "2027-01-23", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m47", "team": "AB", "home": false, "rival": "CP Rio Sella B", "date": "2027-01-23", "orig": "2027-01-23", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": false}, {"id": "m48", "team": "IN", "home": false, "rival": "A.D. LOS CAMPOS", "date": "2027-01-23", "orig": "2027-01-23", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m49", "team": "C1", "home": false, "rival": "A.D. LOS CAMPOS", "date": "2027-01-23", "orig": "2027-01-23", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m50", "team": "C2", "home": false, "rival": "C.V. Siero A", "date": "2027-01-23", "orig": "2027-01-23", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m51", "team": "AB", "home": true, "rival": "CP Rio Sella A", "date": "2027-01-30", "orig": "2027-01-30", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": true}, {"id": "m52", "team": "IN", "home": true, "rival": "CLUB VOLEIBOL LA CALZADA A", "date": "2027-01-30", "orig": "2027-01-30", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m53", "team": "C1", "home": true, "rival": "CV LA CALZADA A", "date": "2027-01-30", "orig": "2027-01-30", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m54", "team": "C2", "home": true, "rival": "Club Voleibol Noreña A", "date": "2027-01-30", "orig": "2027-01-30", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m55", "team": "AA", "home": false, "rival": "Peña Tú B", "date": "2027-01-30", "orig": "2027-01-30", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m56", "team": "AB", "home": true, "rival": "Derbi del club", "date": "2027-02-13", "orig": "2027-02-13", "pista": "", "hora": "", "note": "", "team2": "AA", "estado": "", "coaches": ["c5", "c4"], "coachLock": false, "origHome": true}, {"id": "m57", "team": "C2", "home": true, "rival": "CD Nava Voley", "date": "2027-02-13", "orig": "2027-02-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": true}, {"id": "m58", "team": "BE", "home": false, "rival": "C.P. La Fresneda", "date": "2027-02-13", "orig": "2027-02-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m59", "team": "IN", "home": false, "rival": "CV OVIEDO A", "date": "2027-02-13", "orig": "2027-02-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m60", "team": "C1", "home": false, "rival": "CV OVIEDO A", "date": "2027-02-13", "orig": "2027-02-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m61", "team": "BE", "home": true, "rival": "Valdellera", "date": "2027-02-20", "orig": "2027-02-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m62", "team": "AA", "home": true, "rival": "CP Rio Sella A", "date": "2027-02-20", "orig": "2027-02-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m63", "team": "C2", "home": false, "rival": "CD Creimi F", "date": "2027-02-20", "orig": "2027-02-20", "pista": "", "hora": "", "note": "Sede invertida con la ida del 14 nov (petición de Creimi).", "estado": "pendiente", "coaches": ["c2"], "coachLock": false, "origHome": true}, {"id": "m64", "team": "AB", "home": false, "rival": "Peña Tú A", "date": "2027-02-20", "orig": "2027-02-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m65", "team": "IN", "home": false, "rival": "CID JOVELLANOS A", "date": "2027-02-20", "orig": "2027-02-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m66", "team": "C1", "home": false, "rival": "CID JOVELLANOS A", "date": "2027-02-20", "orig": "2027-02-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m67", "team": "AB", "home": true, "rival": "Valdellera", "date": "2027-02-27", "orig": "2027-02-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": true}, {"id": "m68", "team": "IN", "home": true, "rival": "RGC COVADONGA A", "date": "2027-02-27", "orig": "2027-02-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m69", "team": "C1", "home": true, "rival": "RGC COVADONGA A", "date": "2027-02-27", "orig": "2027-02-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m70", "team": "BE", "home": false, "rival": "Peña Tú A", "date": "2027-02-27", "orig": "2027-02-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m71", "team": "AA", "home": true, "rival": "CP Rio Sella B", "date": "2027-02-27", "orig": "2027-02-27", "pista": "", "hora": "", "note": "Sede invertida: la ida (contra Río Sella B, 11 nov) se juega en el C.P. Río Sella.", "estado": "pendiente", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m72", "team": "C2", "home": false, "rival": "Club Voleibol Noreña B", "date": "2027-02-27", "orig": "2027-02-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m73", "team": "C2", "home": true, "rival": "C.V. Siero B", "date": "2027-03-06", "orig": "2027-03-06", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": true}, {"id": "m74", "team": "AA", "home": false, "rival": "Peña Tú A", "date": "2027-03-06", "orig": "2027-03-06", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m75", "team": "AB", "home": false, "rival": "CP Rio Sella C", "date": "2027-03-06", "orig": "2027-03-06", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": false}, {"id": "m76", "team": "IN", "home": false, "rival": "IES LLANES P", "date": "2027-03-06", "orig": "2027-03-06", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m77", "team": "C1", "home": false, "rival": "IES LLANES P", "date": "2027-03-06", "orig": "2027-03-06", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m78", "team": "C1", "home": true, "rival": "Col. Inmaculada A", "date": "2027-03-07", "orig": "2027-03-07", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m79", "team": "BE", "home": true, "rival": "CP Peña TU C", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m80", "team": "AA", "home": true, "rival": "Valdellera", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m81", "team": "AB", "home": true, "rival": "CP Peña TU C", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m82", "team": "IN", "home": true, "rival": "Col. Inmaculada A", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": true}, {"id": "m83", "team": "C1", "home": false, "rival": "AD LA CURTIDORA A", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m84", "team": "C2", "home": false, "rival": "IES Llanes D", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m85", "team": "BE", "home": false, "rival": "Peña Tú B", "date": "2027-03-20", "orig": "2027-03-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m86", "team": "AA", "home": false, "rival": "CP Rio Sella C", "date": "2027-03-20", "orig": "2027-03-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m87", "team": "AB", "home": false, "rival": "CP Valdellera 9X18", "date": "2027-03-20", "orig": "2027-03-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c5"], "coachLock": false, "origHome": false}, {"id": "m88", "team": "IN", "home": false, "rival": "CLUB NÁUTICO CARREÑO A", "date": "2027-03-20", "orig": "2027-03-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m89", "team": "C1", "home": false, "rival": "RGC COVADONGA B", "date": "2027-03-20", "orig": "2027-03-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m90", "team": "C2", "home": false, "rival": "CD Creimi B", "date": "2027-03-20", "orig": "2027-03-20", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c6"], "coachLock": false, "origHome": false}, {"id": "m91", "team": "AA", "home": true, "rival": "CP Peña TU C", "date": "2027-03-27", "orig": "2027-03-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": true}, {"id": "m92", "team": "AB", "home": true, "rival": "Peña Tú B", "date": "2027-03-27", "orig": "2027-03-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": true}, {"id": "m93", "team": "BE", "home": false, "rival": "Ceip L'ablanu", "date": "2027-03-27", "orig": "2027-03-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": false}, {"id": "m94", "team": "C2", "home": false, "rival": "IES Llanes C", "date": "2027-03-27", "orig": "2027-03-27", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"id": "m95", "team": "C1", "home": true, "rival": "SAN IGNACIO B", "date": "2027-04-03", "orig": "2027-04-03", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m96", "team": "IN", "home": false, "rival": "RGC COVADONGA B", "date": "2027-04-03", "orig": "2027-04-03", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m97", "team": "BE", "home": true, "rival": "Colegio Internacional Meres", "date": "2027-04-10", "orig": "2027-04-10", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m98", "team": "AB", "home": true, "rival": "CP Rio Sella B", "date": "2027-04-10", "orig": "2027-04-10", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m99", "team": "IN", "home": true, "rival": "SAN IGNACIO B", "date": "2027-04-10", "orig": "2027-04-10", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m100", "team": "C2", "home": true, "rival": "C.V. Siero A", "date": "2027-04-10", "orig": "2027-04-10", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": true}, {"id": "m101", "team": "AA", "home": false, "rival": "CP Valdellera 9X18", "date": "2027-04-10", "orig": "2027-04-10", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m102", "team": "C1", "home": false, "rival": "SAN IGNACIO A", "date": "2027-04-10", "orig": "2027-04-10", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m103", "team": "AA", "home": true, "rival": "Peña Tú B", "date": "2027-04-17", "orig": "2027-04-17", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c3"], "coachLock": false, "origHome": true}, {"id": "m104", "team": "AB", "home": false, "rival": "CP Rio Sella A", "date": "2027-04-17", "orig": "2027-04-17", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c4"], "coachLock": false, "origHome": false}, {"id": "m105", "team": "IN", "home": false, "rival": "SAN IGNACIO A", "date": "2027-04-17", "orig": "2027-04-17", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c2"], "coachLock": false, "origHome": false}, {"id": "m106", "team": "C2", "home": false, "rival": "Club Voleibol Noreña A", "date": "2027-04-17", "orig": "2027-04-17", "pista": "", "hora": "", "note": "", "estado": "", "coaches": ["c1"], "coachLock": false, "origHome": false}, {"team": "MB", "home": false, "origHome": false, "date": "2026-11-14", "orig": "2026-11-14", "pista": "", "hora": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Polideportivo de Arriondas", "note": "Concentración organizada por Colegio Loyola B en el Polideportivo de Arriondas. Horario: lo publica la federación el viernes anterior.", "id": "mbn1", "rival": "CP Rio Sella (local)", "sedeDuda": true}, {"team": "MB", "home": false, "origHome": false, "date": "2026-11-14", "orig": "2026-11-14", "pista": "", "hora": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Polideportivo de Arriondas", "note": "Concentración organizada por Colegio Loyola B en el Polideportivo de Arriondas. Horario: lo publica la federación el viernes anterior.", "id": "mbn2", "rival": "Col. Inmaculada D", "sedeDuda": true}, {"team": "MB", "home": false, "origHome": false, "date": "2026-11-28", "orig": "2026-11-28", "pista": "", "hora": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Polideportivo Los Canapés (Avilés)", "note": "Concentración en Avilés (Los Canapés): dos partidos seguidos. Horario: lo publica la federación el viernes anterior.", "id": "mbn3", "rival": "CP El Quirinal B", "sedeDuda": true}, {"team": "MB", "home": false, "origHome": false, "date": "2026-11-28", "orig": "2026-11-28", "pista": "", "hora": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Polideportivo Los Canapés (Avilés)", "note": "Concentración en Avilés (Los Canapés): dos partidos seguidos. Horario: lo publica la federación el viernes anterior.", "id": "mbn4", "rival": "Col. Inmaculada D", "sedeDuda": true}, {"team": "MB", "home": true, "origHome": true, "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Cangas (organizamos)", "note": "Concentración completa que organizamos en Cangas (6 partidos). Horario: lo publica la federación el viernes anterior.", "id": "mbn5", "rival": "CP El Quirinal B", "sedeDuda": true}, {"team": "MB", "home": true, "origHome": true, "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Cangas (organizamos)", "note": "Concentración completa que organizamos en Cangas (6 partidos). Horario: lo publica la federación el viernes anterior.", "id": "mbn6", "rival": "Colegio Loyola A", "sedeDuda": true}, {"team": "MB", "home": false, "origHome": false, "date": "2027-01-16", "orig": "2027-01-16", "pista": "", "hora": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Colegio Inmaculada (Gijón)", "note": "Concentración en el Colegio Inmaculada (Gijón). Horario: lo publica la federación el viernes anterior.", "id": "mbn7", "rival": "CP Rio Sella", "sedeDuda": true}, {"team": "MB", "home": false, "origHome": false, "date": "2027-01-16", "orig": "2027-01-16", "pista": "", "hora": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Colegio Inmaculada (Gijón)", "note": "Concentración en el Colegio Inmaculada (Gijón). Horario: lo publica la federación el viernes anterior.", "id": "mbn8", "rival": "CP El Quirinal A", "sedeDuda": true}, {"id": "mbn9", "team": "MB", "home": false, "origHome": false, "rival": "Colegio Loyola B", "date": "2027-01-30", "orig": "2027-01-30", "pista": "", "hora": "", "note": "Concentración en Avilés (Los Canapés). Horario: lo publica la federación el viernes anterior.", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Polideportivo Los Canapés (Avilés)", "sedeDuda": true}, {"id": "mbn10", "team": "MB", "home": false, "origHome": false, "rival": "Colegio Loyola A", "date": "2027-01-30", "orig": "2027-01-30", "pista": "", "hora": "", "note": "Concentración en Avilés (Los Canapés). Horario: lo publica la federación el viernes anterior.", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Polideportivo Los Canapés (Avilés)", "sedeDuda": true}, {"id": "mbn11", "team": "MB", "home": true, "origHome": true, "rival": "CP El Quirinal A", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "Concentración completa que organizamos en Cangas (6 partidos). Horario: lo publica la federación el viernes anterior.", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mbn12", "team": "MB", "home": true, "origHome": true, "rival": "Colegio Loyola B", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "Concentración completa que organizamos en Cangas (6 partidos). Horario: lo publica la federación el viernes anterior.", "estado": "", "coaches": [], "coachLock": false, "live": true, "doble": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mba10", "team": "MB", "home": true, "origHome": true, "rival": "Colegio Loyola A – CP El Quirinal B", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "ajeno": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mba11", "team": "MB", "home": true, "origHome": true, "rival": "Colegio Loyola B – CP Rio Sella", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "ajeno": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mba12", "team": "MB", "home": true, "origHome": true, "rival": "CP Rio Sella – Col. Inmaculada D", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "ajeno": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mba13", "team": "MB", "home": true, "origHome": true, "rival": "Colegio Loyola B – Col. Inmaculada D", "date": "2026-12-12", "orig": "2026-12-12", "pista": "", "hora": "", "note": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "ajeno": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mba20", "team": "MB", "home": true, "origHome": true, "rival": "Colegio Loyola A – CP El Quirinal B", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "ajeno": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mba21", "team": "MB", "home": true, "origHome": true, "rival": "CP El Quirinal B – CP Rio Sella", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "ajeno": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mba22", "team": "MB", "home": true, "origHome": true, "rival": "Colegio Loyola A – CP Rio Sella", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "ajeno": true, "sede": "Cangas (organizamos)", "sedeDuda": true}, {"id": "mba23", "team": "MB", "home": true, "origHome": true, "rival": "Colegio Loyola B – CP El Quirinal A", "date": "2027-03-13", "orig": "2027-03-13", "pista": "", "hora": "", "note": "", "estado": "", "coaches": [], "coachLock": false, "live": true, "ajeno": true, "sede": "Cangas (organizamos)", "sedeDuda": true}], "maxHora": "13:30", "busyV1": 1, "emV1": 1, "mbV1": 1, "emV2": 1, "busyV2": 1, "busyV3": 1, "susp": [], "suspV1": 1, "famBase": "https://danielvega80.github.io/partidos/"}</script>
-<script id="app-script">
-(function(){
-"use strict";
-const TEAMS=[
- {k:"MB",n:"Minibenjamín",c:"Minibenjamín · CP Reconquista",col:"--t-mb"},
- {k:"BE",n:"Benjamín",c:"Benjamín Mixto Grupo C",col:"--t-be"},
- {k:"AA",n:"Alevín A",c:"Alevín Mixto Grupo B",col:"--t-aa"},
- {k:"AB",n:"Alevín B",c:"Alevín Mixto Grupo B",col:"--t-ab"},
- {k:"IN",n:"Infantil A1",c:"Primera A1 · Infantil",col:"--t-in"},
- {k:"C1",n:"Cadete A1",c:"Primera A1 · Cadete",col:"--t-c1"},
- {k:"C2",n:"Cadete A2",c:"Segunda A2 Grupo A · Cadete fem.",col:"--t-c2"}];
-// Minibenjamín (CP Reconquista) · grupo de 7 equipos: descansa en J3 (28/11) y J10 (20/2)
-const RAW_MB=`2026-11-14|MB|H|Col. Inmaculada D
-2026-11-21|MB|H|CP Rio Sella
-2026-12-12|MB|H|Colegio Loyola B
-2026-12-19|MB|H|CP El Quirinal B
-2027-01-16|MB|A|Colegio Loyola A
-2027-01-23|MB|H|CP El Quirinal A
-2027-01-30|MB|A|Col. Inmaculada D
-2027-02-13|MB|A|CP Rio Sella
-2027-02-27|MB|A|Colegio Loyola B
-2027-03-13|MB|A|CP El Quirinal B
-2027-03-20|MB|H|Colegio Loyola A
-2027-03-27|MB|A|CP El Quirinal A`;
-const ESTL={propuesto:"propuesto",aceptado:"aceptado rival",pendiente:"pendiente FVBPA",comunicado:"confirmado FVBPA"};
-const TM=Object.fromEntries(TEAMS.map(t=>[t.k,t]));
-const ORDER=["MB","BE","AA","AB","IN","C1","C2"];
-// fecha | equipo | H casa / A fuera | rival  (derbi Alevín A–B se guarda una sola vez)
-const RAW=`2026-10-24|IN|H|CV OVIEDO A
-2026-10-24|C1|H|CV OVIEDO A
-2026-11-07|AA|H|Alevín B (derbi del club)
-2026-11-07|IN|H|CID JOVELLANOS A
-2026-11-07|C1|H|CID JOVELLANOS A
-2026-11-07|C2|A|CD Nava Voley
-2026-11-14|BE|H|C.P. La Fresneda
-2026-11-14|AB|H|Peña Tú A
-2026-11-14|AA|A|CP Rio Sella A
-2026-11-14|IN|A|RGC COVADONGA A
-2026-11-14|C1|A|RGC COVADONGA A
-2026-11-14|C2|A|CD Creimi F
-2026-11-21|AA|H|CP Rio Sella B
-2026-11-21|IN|H|IES LLANES P
-2026-11-21|C1|H|IES LLANES P
-2026-11-21|C2|H|Club Voleibol Noreña B
-2026-11-21|BE|A|Valdellera
-2026-11-21|AB|A|Valdellera
-2026-11-22|IN|A|Col. Inmaculada A
-2026-11-22|C1|A|Col. Inmaculada A
-2026-11-28|BE|H|Peña Tú A
-2026-11-28|AA|H|Peña Tú A
-2026-11-28|AB|H|CP Rio Sella C
-2026-11-28|IN|H|CLUB NÁUTICO CARREÑO A
-2026-11-28|C1|H|AD LA CURTIDORA A
-2026-11-28|C2|A|C.V. Siero B
-2026-12-12|IN|H|RGC COVADONGA B
-2026-12-12|C1|H|RGC COVADONGA B
-2026-12-12|C2|H|IES Llanes D
-2026-12-12|BE|A|CP Peña TU C
-2026-12-12|AA|A|Valdellera
-2026-12-12|AB|A|CP Peña TU C
-2026-12-19|BE|H|Peña Tú B
-2026-12-19|AA|H|CP Rio Sella C
-2026-12-19|AB|H|CP Valdellera 9X18
-2026-12-19|C2|H|CD Creimi B
-2026-12-19|IN|A|SAN IGNACIO B
-2026-12-19|C1|A|SAN IGNACIO B
-2027-01-16|BE|H|Ceip L'ablanu
-2027-01-16|IN|H|SAN IGNACIO A
-2027-01-16|C1|H|SAN IGNACIO A
-2027-01-16|C2|H|IES Llanes C
-2027-01-16|AA|A|CP Peña TU C
-2027-01-16|AB|A|Peña Tú B
-2027-01-23|AA|H|CP Valdellera 9X18
-2027-01-23|BE|A|Colegio Internacional Meres
-2027-01-23|AB|A|CP Rio Sella B
-2027-01-23|IN|A|A.D. LOS CAMPOS
-2027-01-23|C1|A|A.D. LOS CAMPOS
-2027-01-23|C2|A|C.V. Siero A
-2027-01-30|AB|H|CP Rio Sella A
-2027-01-30|IN|H|CLUB VOLEIBOL LA CALZADA A
-2027-01-30|C1|H|CV LA CALZADA A
-2027-01-30|C2|H|Club Voleibol Noreña A
-2027-01-30|AA|A|Peña Tú B
-2027-02-13|AB|H|Alevín A (derbi del club)
-2027-02-13|C2|H|CD Nava Voley
-2027-02-13|BE|A|C.P. La Fresneda
-2027-02-13|IN|A|CV OVIEDO A
-2027-02-13|C1|A|CV OVIEDO A
-2027-02-20|BE|H|Valdellera
-2027-02-20|AA|H|CP Rio Sella A
-2027-02-20|C2|H|CD Creimi F
-2027-02-20|AB|A|Peña Tú A
-2027-02-20|IN|A|CID JOVELLANOS A
-2027-02-20|C1|A|CID JOVELLANOS A
-2027-02-27|AB|H|Valdellera
-2027-02-27|IN|H|RGC COVADONGA A
-2027-02-27|C1|H|RGC COVADONGA A
-2027-02-27|BE|A|Peña Tú A
-2027-02-27|AA|A|CP Rio Sella B
-2027-02-27|C2|A|Club Voleibol Noreña B
-2027-03-06|C2|H|C.V. Siero B
-2027-03-06|AA|A|Peña Tú A
-2027-03-06|AB|A|CP Rio Sella C
-2027-03-06|IN|A|IES LLANES P
-2027-03-06|C1|A|IES LLANES P
-2027-03-07|C1|H|Col. Inmaculada A
-2027-03-13|BE|H|CP Peña TU C
-2027-03-13|AA|H|Valdellera
-2027-03-13|AB|H|CP Peña TU C
-2027-03-13|IN|H|Col. Inmaculada A
-2027-03-13|C1|A|AD LA CURTIDORA A
-2027-03-13|C2|A|IES Llanes D
-2027-03-20|BE|A|Peña Tú B
-2027-03-20|AA|A|CP Rio Sella C
-2027-03-20|AB|A|CP Valdellera 9X18
-2027-03-20|IN|A|CLUB NÁUTICO CARREÑO A
-2027-03-20|C1|A|RGC COVADONGA B
-2027-03-20|C2|A|CD Creimi B
-2027-03-27|AA|H|CP Peña TU C
-2027-03-27|AB|H|Peña Tú B
-2027-03-27|BE|A|Ceip L'ablanu
-2027-03-27|C2|A|IES Llanes C
-2027-04-03|C1|H|SAN IGNACIO B
-2027-04-03|IN|A|RGC COVADONGA B
-2027-04-10|BE|H|Colegio Internacional Meres
-2027-04-10|AB|H|CP Rio Sella B
-2027-04-10|IN|H|SAN IGNACIO B
-2027-04-10|C2|H|C.V. Siero A
-2027-04-10|AA|A|CP Valdellera 9X18
-2027-04-10|C1|A|SAN IGNACIO A
-2027-04-17|AA|H|Peña Tú B
-2027-04-17|AB|A|CP Rio Sella A
-2027-04-17|IN|A|SAN IGNACIO A
-2027-04-17|C2|A|Club Voleibol Noreña A`;
-
-function mbMatches(){return RAW_MB.split("\n").map((l,i)=>{const [d,t,h,r]=l.split("|");return {id:"mb"+(i+1),team:t,home:h==="H",origHome:h==="H",rival:r,date:d,orig:d,pista:"",hora:"",note:""};});}
-function defaultState(){
-  const matches=RAW.split("\n").map((l,i)=>{const [d,t,h,r]=l.split("|");
-    const m={id:"m"+(i+1),team:t,home:h==="H",origHome:h==="H",rival:r,date:d,orig:d,pista:"",hora:"",note:""};
-    if(/derbi/i.test(r)){m.team2=(t==="AA"?"AB":"AA");m.rival="Derbi del club";}
-    return m;}).concat(mbMatches());
-  return {v:6,savedAt:0,llegada:{peq:30,gra:45},viaje:{},franjasSemana:["17:00","18:30","20:00"],balance:true,
-    pistas:[{id:"l1",name:"Tercio lateral 1",teams:[],exc:false},{id:"l2",name:"Tercio lateral 2",teams:[],exc:false},{id:"tc",name:"Tercio central",teams:["MB","BE","AA","AB"],exc:false},{id:"fr",name:"Frontón",teams:["MB","BE","AA","AB"],exc:true}],
-    franjas:["09:45","10:30","11:00","12:00","13:00"],maxHora:"13:30",
-    t:{peq:{d:60,max:75,w1:45,w2:15},gra:{d:100,max:120,w1:45,w2:20}},
-    coaches:[
-      {id:"c1",wk:[1,2,3,4,5],name:"Dani",pref:["C1","IN","C2"],otros:"si",emerg:false,off:[]},
-      {id:"c2",name:"Manuela",pref:["IN"],otros:"si",emerg:false,off:[],alt:{on:true,start:""}},
-      {id:"c3",name:"Lucía",pref:["BE","AA","AB"],otros:"ultimo",emerg:false,off:["2026-11-28","2026-12-19"]},
-      {id:"c4",name:"Hugo",pref:["BE","AA","AB"],otros:"ultimo",emerg:false,off:[]},
-      {id:"c5",name:"Paula Sánchez",pref:["BE","AA","AB"],otros:"ultimo",emerg:false,off:[]},
-      {id:"c6",name:"Elena",pref:[],otros:"si",emerg:true,off:[]},
-      {id:"c7",name:"Ari",pref:[],otros:"si",emerg:true,off:[]}],
-    matches};
-}
-
-// ---------- estado ----------
-const LSKEY="planificador-cvcangas-draft-v2";
-let embedded=null;
-try{embedded=JSON.parse(document.getElementById("state").textContent);}catch(e){embedded=null;}
-let base=embedded&&embedded.matches?embedded:defaultState();
-let S=JSON.parse(JSON.stringify(base));
-let dirty=false;
-try{const d=JSON.parse(localStorage.getItem(LSKEY)||"null");
-  if(d&&d.matches&&(d.baseSavedAt||0)>=(base.savedAt||0)&&d.state){S=d.state;dirty=true;}}catch(e){}
-if((S.v||1)<3){S.coaches.forEach(c=>{if(c.name==="Dani"&&!(c.pref||[]).includes("C2"))(c.pref=c.pref||[]).push("C2");if(c.name==="Manuela"&&!c.alt)c.alt={on:true,start:""};});S.v=3;}
-if(S.v<4){if(S.pistas.every(p=>/^Pista \d$/.test(p.name))){S.pistas=[{id:"l1",name:"Tercio lateral 1",teams:[],exc:false},{id:"l2",name:"Tercio lateral 2",teams:[],exc:false},{id:"tc",name:"Tercio central",teams:["MB","BE","AA","AB"],exc:false},{id:"fr",name:"Frontón",teams:["MB","BE","AA","AB"],exc:true}];S.matches.forEach(m=>m.pista="");}S.v=4;}
-if(S.v<5){if(S.franjas.join()==="10:00,11:30,13:00,16:30,18:00")S.franjas=["09:45","10:30","11:00","12:00","13:00"];S.v=5;}
-S.t=S.t||{peq:{d:60,max:75,w1:45,w2:15},gra:{d:100,max:120,w1:45,w2:20}};delete S.dur;
-if(!S.t.mini)S.t.mini={d:40,max:50,w1:30,w2:10};
-S.maxHora=S.maxHora||"13:30";
-if(S.v<6){S.llegada=S.llegada??{peq:30,gra:45};S.viaje=S.viaje||{};S.franjasSemana=S.franjasSemana||["17:00","18:30","20:00"];S.balance=S.balance??true;S.v=6;}
-if(typeof S.llegada!=="object"||!S.llegada)S.llegada={peq:30,gra:45};
-S.coaches.forEach(c=>{if(!Array.isArray(c.wk))c.wk=[1,2,3,4,5];if(!Array.isArray(c.busy))c.busy=[];});
-if(!S.busyV1){const mn=S.coaches.find(c=>c.name==="Manuela");if(mn)["2026-11-07","2026-11-21","2026-12-19"].forEach(d=>{if(!mn.busy.some(b=>b.d===d))mn.busy.push({d,desde:"00:00",hasta:"13:00"});});S.busyV1=1;}
-S.coaches.forEach(c=>{if(!Array.isArray(c.emT))c.emT=[];});
-if(!S.emV1){const pa=S.coaches.find(c=>/^paula/i.test(c.name));if(pa&&!pa.emT.includes("C2"))pa.emT.push("C2");S.emV1=1;}
-if(!S.mbV1){mbMatches().forEach(m=>{if(!S.matches.some(x=>x.id===m.id))S.matches.push(m);});
-  S.coaches.forEach(c=>{if(c.pref.includes("BE")&&!c.pref.includes("MB"))c.pref.push("MB");});S.mbV1=1;}
-if(!S.emV2){const pa=S.coaches.find(c=>/^paula/i.test(c.name));if(pa){["IN","C1","C2"].forEach(k=>{if(!pa.emT.includes(k))pa.emT.push(k);});pa.pref=pa.pref.filter(k=>!["IN","C1","C2"].includes(k));}S.emV2=1;}
-if(!S.busyV2){const mn=S.coaches.find(c=>c.name==="Manuela");if(mn&&!mn.busy.some(b=>b.d==="2026-12-05"))mn.busy.push({d:"2026-12-05",desde:"00:00",hasta:"13:00"});S.busyV2=1;}
-if(!S.busyV3){const mn=S.coaches.find(c=>c.name==="Manuela");if(mn)mn.busy.forEach(b=>{if(["2026-11-07","2026-11-21","2026-12-05","2026-12-19"].includes(b.d)&&b.desde==="00:00"&&b.hasta==="13:00")b.hasta="15:00";});S.busyV3=1;}
-S.matches.forEach(m=>{m.estado=m.estado||"";if(m.team2&&/derbi/i.test(m.rival))m.rival="Derbi del club";});
-let DB=null,DL=null,DBOFF={};
-S.pistas.forEach(p=>{p.teams=p.teams||[];p.exc=!!p.exc;});
-S.coaches.forEach(c=>{c.alt=c.alt||{on:false,start:""};c.pref=c.pref||c.teams||[];c.otros=c.otros||"no";c.emerg=!!c.emerg;c.off=c.off||[];delete c.teams;});
-if(!Array.isArray(S.susp))S.susp=[];
-if(!S.suspV1){if(!S.susp.includes("MB"))S.susp.push("MB");S.suspV1=1;}
-S.matches.forEach(m=>{if(typeof m.origHome!=="boolean")m.origHome=m.home;});
-S.matches.forEach(m=>{if(!Array.isArray(m.coaches))m.coaches=[];m.coachLock=!!m.coachLock;});
-let artifactApi=null, canSave=null;
-const ui={fam:null,me:null,tab:"cal",teams:new Set(ORDER),showFree:true,showPast:false,sheet:null,confirmReset:false,dragId:null};
-try{const u=JSON.parse(localStorage.getItem(LSKEY+"-ui")||"null");if(u){ui.teams=new Set(u.teams||ORDER);ui.showFree=u.showFree!==false;ui.showPast=!!u.showPast;}}catch(e){}
-
-const TODAY=(()=>{const d=new Date();return iso(d);})();
-function iso(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
-function pd(s){const [y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d);}
-const DOW=["dom","lun","mar","mié","jue","vie","sáb"],DOWL=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
-const MON=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
-function fshort(s){const d=pd(s);return DOW[d.getDay()]+" "+d.getDate()+" "+MON[d.getMonth()];}
-function flong(s){const d=pd(s);return DOWL[d.getDay()]+" "+d.getDate()+" "+MON[d.getMonth()];}
-function isWeekend(s){const g=pd(s).getDay();return g===0||g===6;}
-function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));}
-function teamsOf(m){return m.team2?[m.team,m.team2]:[m.team];}
-function teamLabel(m){if(m.ajeno)return "Concentración "+TM[m.team].n;return m.team2?TM[m.team].n+" – "+TM[m.team2].n:TM[m.team].n;}
-function isSusp(m){if(m.live)return false;return (S.susp||[]).includes(m.team)||(m.team2&&(S.susp||[]).includes(m.team2));}
-function AM(){return S.matches.filter(m=>!isSusp(m));}
-function coachById(id){return S.coaches.find(c=>c.id===id);}
-function coachesFor(m){return (m.coaches||[]).filter(Boolean).map(coachById).filter(Boolean);}
-function franjasFor(date){return isWeekend(date)?S.franjas.filter(f=>toMin(f)<=toMin(S.maxHora)):S.franjasSemana;}
-function tooLate(m){return isWeekend(m.date)&&m.hora&&toMin(m.hora)>toMin(S.maxHora);}
-function isOff(c,date){
-  if(c.off.includes(date))return true;
-  if(DBOFF[c.id]&&DBOFF[c.id].includes(date))return true;
-  if(!isWeekend(date)&&Array.isArray(c.wk)&&!c.wk.includes(pd(date).getDay()))return true;
-  if(c.alt&&c.alt.on&&c.alt.start&&isWeekend(date)){
-    const d=pd(date);if(d.getDay()===0)d.setDate(d.getDate()-1);
-    const st=pd(c.alt.start);if(st.getDay()===0)st.setDate(st.getDate()-1);
-    const wk=Math.round((d-st)/(7*864e5));if(((wk%2)+2)%2===0)return true;}
-  return false;}
-function tier(c,team){if((c.emT||[]).includes(team))return 3;if(c.pref.includes(team))return 0;if(c.otros==="si")return 1;if(c.otros==="ultimo")return 2;return 9;}
-function cost(c,team){const t=tier(c,team);return t===9?99:t===3?8+(c.emerg?5:0):t+(c.emerg?5:0);}
-function tierLabel(c,team){if(!c)return"";const t=tier(c,team);return (c.emerg||t===3?"emergencia":t===0?"preferente":t===1?"puede":t===2?"último caso":"no lleva este equipo");}
-function guessTravel(k){const T=[["reconquista",0],["rio sella",15],["ablanu",30],["valdellera",40],["creimi",75],["llanes",40],["nava",35],["pena tu",40],["siero",60],["fresneda",60],["meres",60],["norena",60],["oviedo",65],["san ignacio",65],["jovellanos",70],["calzada",70],["covadonga",70],["inmaculada",70],["campos",75],["curtidora",75],["carreno",75],["loyola",65],["quirinal",75],["arriondas",15],["canapes",75],["aviles",75]];for(const [w,v] of T)if(k.includes(w))return v;return 45;}
-function vk(m){return venueKey(m.sede||m.rival);}
-function travel(m){const k=vk(m);return S.viaje[k]!=null?S.viaje[k]:guessTravel(k);}
-function lleg(m){return S.llegada[grp(m)===S.t.gra?"gra":"peq"];}
-function salida(m){return fromMin(toMin(m.hora)-travel(m)-lleg(m));}
-// tiempo que el entrenador está ocupado: en casa con calentamiento; fuera con viaje de ida y vuelta
-function cspan(m,max){if(!m.hora)return null;if(m.home)return span(m,null,max);const g=grp(m),st=toMin(m.hora),tv=travel(m);return [st-tv-lleg(m),st+(max?g.max:g.d)+tv];}
-function sameTrip(a,b){return !a.home&&!b.home&&vk(a)===vk(b);}
-function clashCoach(x,m){
-  if(x===m||sameTrip(x,m))return "";
-  if(x.home&&m.home)return overlap(x,m)?`ya tiene ${TM[x.team].n} de ${x.hora} a ${endOf(x)}`:"";
-  const a=cspan(x),b=cspan(m);
-  if(!a||!b)return x.home?`ya va en casa con ${TM[x.team].n}; pon la hora del partido fuera para ver si da tiempo`:`ya va a ${x.rival} con ${TM[x.team].n}${x.hora&&m.hora?"":"; faltan horas para ver si da tiempo"}`;
-  return (a[0]<b[1]&&b[0]<a[1])?`no le da tiempo: ${x.home?"está en casa con "+TM[x.team].n:"viaja a "+x.rival+" con "+TM[x.team].n} de ${fromMin(a[0])} a ${fromMin(a[1])}`:"";}
-function busyOn(c,date){return (c.busy||[]).filter(b=>b.d===date);}
-function busyTxt(b){return b.desde==="00:00"?`trabaja hasta las ${b.hasta}`:(b.hasta==="23:59"?`no está desde las ${b.desde}`:`no está de ${b.desde} a ${b.hasta}`);}
-function busyClash(c,m,date){const bs=busyOn(c,date);if(!bs.length)return "";
-  const sp=m.hora?cspan(Object.assign({},m,{date})):null;
-  for(const b of bs){if(!sp)return `${busyTxt(b)}; pon la hora del partido para ver si llega`;
-    const s1=toMin(b.desde),e1=toMin(b.hasta);if(sp[0]<e1&&s1<sp[1])return `${busyTxt(b)} y el partido le ocupa de ${fromMin(sp[0])} a ${fromMin(sp[1])}`;}
-  return "";}
-// ¿puede el entrenador c coger el partido m ese día, dados los que ya tiene (L)?
-function canTake(c,m,date,L){
-  if(isOff(c,date))return false;
-  if(busyClash(c,m,date))return false;
-  for(const x of L){if(clashCoach(x,m))return false;}
-  return true;}
-function conflictWhy(c,m,date,L){
-  if(isOff(c,date))return (c.off.includes(date)||(DBOFF[c.id]||[]).includes(date))?"no está ese día":(!isWeekend(date)?"no puede ese día de la semana":"trabaja ese fin de semana");
-  const bc=busyClash(c,m,date);if(bc)return bc;
-  for(const x of L){const r=clashCoach(x,m);if(r)return r;}
-  return "";}
-// reparto óptimo de entrenadores en un día (búsqueda con poda)
-let SOLVE_CAP=120000;
-function solveDay(list,counts){
-  if(!list.length)return 0;const date=list[0].date;const load={};
-  const push=(id,m)=>{(load[id]=load[id]||[]).push(m);};
-  list=list.filter(m=>!m.ajeno);if(!list.length)return 0;
-  list.forEach(m=>{if(m.coachLock){(m.coaches||[]).forEach(id=>id&&push(id,m));}else m.coaches=teamsOf(m).map(()=>null);});
-  const slots=[];list.forEach(m=>{if(!m.coachLock)teamsOf(m).forEach((t,i)=>slots.push({m,t,i}));});
-  slots.forEach(s=>{s.c=S.coaches.filter(c=>cost(c,s.t)<99&&!isOff(c,date)).sort((a,b)=>cost(a,s.t)-cost(b,s.t));});
-  slots.sort((a,b)=>a.c.length-b.c.length||ORDER.indexOf(a.t)-ORDER.indexOf(b.t));
-  let best=Infinity,bestA=null,steps=0;const cur=[];
-  (function rec(i,acc){
-    if(acc>=best||steps++>SOLVE_CAP)return;
-    if(i===slots.length){best=acc;bestA=cur.slice();return;}
-    const s=slots[i];
-    for(const c of s.c){const L=load[c.id]||(load[c.id]=[]);if(L.includes(s.m))continue;if(!canTake(c,s.m,date,L))continue;
-      L.push(s.m);cur[i]=c.id;rec(i+1,acc+cost(c,s.t)*10+(L.length>1&&L.every(x=>x.doble&&x.team===s.m.team&&(sameTrip(x,s.m)||(x.home&&s.m.home)))?-1:(L.length-1)*2)+(counts&&L.length===1?Math.min(counts[c.id]||0,12)*0.75:0));L.pop();}
-    cur[i]=null;rec(i+1,acc+1000);
-  })(0,0);
-  if(bestA)slots.forEach((s,i)=>{s.m.coaches[s.i]=bestA[i]||null;});
-  return best;
-}
-function reassignAll(){S.matches.forEach(m=>{if(isSusp(m)&&!m.coachLock)m.coaches=[];});const by={};AM().forEach(m=>(by[m.date]=by[m.date]||[]).push(m));const counts={};
-  Object.keys(by).sort().forEach(d=>{const fut=d>=TODAY;solveDay(by[d],S.balance&&fut?counts:null);
-    if(fut)new Set(by[d].flatMap(m=>m.coaches||[]).filter(Boolean)).forEach(id=>counts[id]=(counts[id]||0)+1);});}
-function dayCoachLoad(date,exclude){const load={};AM().forEach(x=>{if(x.date!==date||x===exclude)return;(x.coaches||[]).forEach(id=>id&&(load[id]=load[id]||[]).push(x));});return load;}
-function venueKey(r){return r.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/\bclub voleibol\b/g,"cv").replace(/[^a-z0-9 ]/g," ").replace(/\b(a|b|c|d|f|p|9x18)\b/g," ").replace(/\s+/g," ").trim();}
-function pistaName(id){const p=S.pistas.find(p=>p.id===id);return p?p.name:"";}
-const BIG=["IN","C1","C2"];
-function toMin(h){const [a,b]=String(h).split(":").map(Number);return a*60+(b||0);}
-function fromMin(n){return String(Math.floor(n/60)).padStart(2,"0")+":"+String(n%60).padStart(2,"0");}
-function grp(m){if(teamsOf(m).some(t=>BIG.includes(t)))return S.t.gra;if(teamsOf(m).every(t=>t==="MB"))return S.t.mini;return S.t.peq;}
-function durOf(m){return grp(m).d;}
-// el primer partido de la pista ese día calienta más; los siguientes, menos
-let SIMPOOL=null;
-function isFirst(m,h){const t=toMin(h);return !(SIMPOOL||AM()).some(x=>x.date===m.date&&x.id!==m.id&&x.home&&x.hora&&(m.pista&&x.pista?x.pista===m.pista:true)&&toMin(x.hora)<t);}
-function warmOf(m,h){const g=grp(m);return isFirst(m,h||m.hora)?g.w1:g.w2;}
-function span(m,h,max){h=h||m.hora;const g=grp(m),st=toMin(h);return [st-warmOf(m,h),st+(max?g.max:g.d)];}
-function endOf(m,max){return fromMin(span(m,null,max)[1]);}
-// ¿se solapan dos partidos en el tiempo? (con hora en ambos)
-function overlap(a,b,hb,max){const h=hb||b.hora;if(!a.hora||!h)return false;const [s1,e1]=span(a,null,max),[s2,e2]=span(b,h,max);return s1<e2&&s2<e1;}
-function pistaOk(p,m){return !p.teams.length||teamsOf(m).every(t=>p.teams.includes(t));}
-// orden de preferencia: los pequeños primero al tercio central, el Frontón siempre lo último
-function pistasFor(m){const big=teamsOf(m).some(t=>BIG.includes(t));
-  return S.pistas.filter(p=>pistaOk(p,m)).sort((a,b)=>rank(a)-rank(b));
-  function rank(p){return (p.exc?10:0)+(big?0:(p.teams.length?0:1));}}
-function capPenalty(list){
-  const homes=list.filter(x=>x.home);const FR=homes.length?franjasFor(homes[0].date):[];if(!homes.length||!FR.length)return 0;
-  const st=FR.map(toMin);const win=Math.max(...st)+S.t.gra.d-Math.min(...st);
-  const isBig=x=>teamsOf(x).some(t=>BIG.includes(t));
-  const occ=x=>grp(x).d+grp(x).w2;const bigMin=homes.filter(isBig).reduce((a,x)=>a+occ(x),0),allMin=homes.reduce((a,x)=>a+occ(x),0);
-  const bigP=S.pistas.filter(p=>!p.exc&&BIG.every(t=>!p.teams.length||p.teams.includes(t))).length;
-  const norm=S.pistas.filter(p=>!p.exc).length,exc=S.pistas.filter(p=>p.exc).length;
-  let c=0;if(bigMin>bigP*win)c+=1000;
-  if(allMin>(norm+exc)*win)c+=1000;else if(allMin>norm*win)c+=40;
-  return c;}
-
-function changed(m){return m.date!==m.orig||(typeof m.origHome==="boolean"&&m.home!==m.origHome);}
-function vueltaOf(m){if(m.team2||m.custom)return null;const k=r=>r.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\bclub voleibol\b/g,"cv").replace(/[^a-z0-9]+/g," ").trim();return S.matches.find(x=>x!==m&&x.team===m.team&&!x.team2&&k(x.rival)===k(m.rival))||null;}
-function sedeCh(m){return typeof m.origHome==="boolean"&&m.home!==m.origHome;}
-function persist(){if(ui.ro){reassignAll();dirty=false;return;}S.matches.forEach(m=>{if(m.custom){m.orig=m.date;m.origHome=m.home;}if(!changed(m))m.estado="";else if(!m.estado)m.estado="propuesto";});reassignAll();dirty=true;try{localStorage.setItem(LSKEY,JSON.stringify({baseSavedAt:base.savedAt||0,state:S,matches:1}));}catch(e){}}
-function persistUI(){try{localStorage.setItem(LSKEY+"-ui",JSON.stringify({teams:[...ui.teams],showFree:ui.showFree,showPast:ui.showPast}));}catch(e){}}
-
-// ---------- conflictos ----------
-function analyze(){
-  const issues=[]; const byMatch={}; const add=(lvl,ids,text,date)=>{const it={lvl,ids,text,date};issues.push(it);ids.forEach(id=>(byMatch[id]=byMatch[id]||[]).push(it));};
-  const byDate={};AM().forEach(m=>(byDate[m.date]=byDate[m.date]||[]).push(m));
-  Object.entries(byDate).forEach(([date,ms])=>{
-    if(date<TODAY) return;
-    // pista + hora
-    const hp=ms.filter(m=>m.home&&m.pista&&m.hora);
-    hp.forEach((a,i)=>hp.slice(i+1).forEach(b=>{if(a.pista!==b.pista)return;if(overlap(a,b))add("crit",[a.id,b.id],`${pistaName(a.pista)}: ${TM[a.team].n} (${a.hora}–${endOf(a)}) se solapa con ${TM[b.team].n}, que empieza a calentar a las ${fromMin(span(b)[0])}`,date);
-      else if(overlap(a,b,null,true))add("warn",[a.id,b.id],`${pistaName(a.pista)}: si ${TM[a.team].n} se alarga (hasta ${endOf(a,true)}), pisa el calentamiento de ${TM[b.team].n}`,date);}));
-    // mismo equipo dos veces
-    const byTeam={};ms.filter(m=>!m.ajeno).forEach(m=>teamsOf(m).forEach(t=>(byTeam[t]=byTeam[t]||[]).push(m)));
-    Object.entries(byTeam).forEach(([t,arr])=>{if(arr.length<2)return;if(arr.every(m=>m.doble))add("info",arr.map(m=>m.id),`${TM[t].n} juega ${arr.length} partidos seguidos (acordado)`,date);else add("warn",arr.map(m=>m.id),`${TM[t].n} tiene ${arr.length} partidos el mismo día`,date);});
-    // entrenadores (según el reparto)
-    const load={};ms.forEach(m=>(m.coaches||[]).forEach((id,i)=>{if(id)(load[id]=load[id]||[]).push({m,t:teamsOf(m)[i]});}));
-    ms.filter(m=>!m.ajeno).forEach(m=>teamsOf(m).forEach((t,i)=>{if(!(m.coaches||[])[i])add("crit",[m.id],`${TM[t].n} contra ${m.rival}: no queda ningún entrenador libre`,date);}));
-    Object.entries(load).forEach(([id,arr])=>{const c=coachById(id);if(!c)return;
-      const ids=arr.map(a=>a.m.id);
-      if(isOff(c,date))add("crit",ids,`${c.name} no está disponible ese día y tiene asignado ${arr.map(a=>TM[a.t].n).join(", ")}`,date);
-      arr.forEach(a=>{const r=busyClash(c,a.m,date);if(r)add("crit",[a.m.id],`${c.name} no llega a ${TM[a.t].n}: ${r}`,date);});
-      arr.forEach((a,i)=>arr.slice(i+1).forEach(b=>{if(a.m===b.m)return;const r=clashCoach(a.m,b.m);if(r)add("crit",[a.m.id,b.m.id],`${c.name} no puede con ${TM[b.t].n}: ${r}`,date);}));
-      arr.forEach(a=>{
-        if(c.emerg||tier(c,a.t)===3)add("warn",[a.m.id],`${c.name} (solo emergencias${c.emerg?"":" con "+TM[a.t].n}) tendría que ir con ${TM[a.t].n}`,date);
-        else if(tier(c,a.t)===9)add("warn",[a.m.id],`${c.name} no suele llevar ${TM[a.t].n}`,date);
-        else if(tier(c,a.t)===2)add("info",[a.m.id],`${c.name} iría con ${TM[a.t].n} en último caso`,date);
-      });
-    });
-    // acuerdos entre semana
-    ms.forEach(m=>{
-      if(m.team2&&isWeekend(date)) add("info",[m.id],`Derbi Alevín A – Alevín B: se jugará entre semana`,date);
-      if(!m.sede&&/r[ií]o sella/i.test(m.rival)&&isWeekend(date)) add("info",[m.id],`${TM[m.team].n} contra ${m.rival}: se jugará entre semana`,date);
-      if(m.home&&m.pista){const p=S.pistas.find(p=>p.id===m.pista);
-        if(p&&!pistaOk(p,m))add("crit",[m.id],`${teamLabel(m)} no puede jugar en ${p.name} (solo ${p.teams.filter(t=>t!=="MB").map(t=>TM[t].n).join(", ")})`,date);
-        else if(p&&p.exc)add("info",[m.id],`${teamLabel(m)} juega en ${p.name}, que es solo para casos excepcionales`,date);}
-      {const vu=vueltaOf(m);if(vu&&vu.home===m.home&&(sedeCh(m)||sedeCh(vu))&&m.date<vu.date)add("warn",[m.id,vu.id],`${TM[m.team].n} juega ${m.home?"en casa":"fuera"} los dos partidos contra ${m.rival}: revisa la sede de la vuelta (${fshort(vu.date)})`,date);}
-      if(m.duda) add("warn",[m.id],`${teamLabel(m)} ${m.home?"vs":"en"} ${m.rival}: sin confirmar que se juegue${typeof m.duda==="string"?" ("+m.duda+")":""}`,date);
-      if(tooLate(m)) add("crit",[m.id],`${teamLabel(m)} ${m.home?"vs":"en"} ${m.rival} empieza a las ${m.hora}: el límite es las ${S.maxHora}`,date);
-      if(m.home&&(!m.pista||!m.hora)) add("todo",[m.id],`${teamLabel(m)} contra ${m.rival}: falta ${!m.pista&&!m.hora?"pista y hora":(!m.pista?"pista":"hora")}`,date);
-    });
-  });
-  return {issues,byMatch};
-}
-// coste de un día sin tocar el estado real
-function dayCost(list,date){
-  const sim=list.map(x=>({...x,date,coaches:(x.coaches||[]).slice()}));
-  let c=sim.length?solveDay(sim):0;
-  c+=capPenalty(sim);
-  const bt={};sim.filter(x=>!x.ajeno).forEach(x=>teamsOf(x).forEach(t=>bt[t]=(bt[t]||0)+1));Object.entries(bt).forEach(([t,n])=>{if(n>1&&!sim.filter(x=>teamsOf(x).includes(t)).every(x=>x.doble))c+=500*(n-1);});
-  return c;}
-const PROB_CACHE={key:"",val:{}};
-function proposalsFor(date){
-  const key=JSON.stringify([S.matches.map(m=>[m.date,m.hora,m.pista,m.coachLock,m.coaches]),S.coaches,S.pistas,S.franjas,S.franjasSemana,S.viaje,S.llegada,DBOFF,S.susp]);
-  if(PROB_CACHE.key!==key){PROB_CACHE.key=key;PROB_CACHE.val={};}
-  if(PROB_CACHE.val[date])return PROB_CACHE.val[date];
-  const src=AM().filter(m=>m.date===date);const before=dayCost(src,date);
-  const out=[];
-  if(before>0) src.forEach(m=>{
-    if(m.coachLock)return;
-    const srcAfter=dayCost(src.filter(x=>x!==m),date);
-    const dests=boardDates().filter(d=>pd(d).getDay()===6).concat(isWkCand(m)?weekdayDates(m):[]);
-    dests.forEach(d=>{
-      if(d<=TODAY||d===date)return;
-      const dst=AM().filter(x=>x.date===d);
-      if(dst.some(x=>teamsOf(x).some(t=>teamsOf(m).includes(t))))return;
-      const gain=before+dayCost(dst,d)-srcAfter-dayCost(dst.concat([m]),d);
-      if(gain>0)out.push({id:m.id,to:d,gain,dist:Math.abs(pd(d)-pd(m.orig))});});
-  });
-  out.sort((a,b)=>b.gain-a.gain||a.dist-b.dist);
-  // como mucho 3, sin repetir partido
-  const seen=new Set(),res=[];for(const o of out){if(seen.has(o.id))continue;seen.add(o.id);res.push(o);if(res.length===3)break;}
-  return PROB_CACHE.val[date]=res;
-}
-function isWkCand(m){if(m.sede)return false;return !!m.team2||/r[ií]o sella/i.test(m.rival);}
-function addDays(d,n){const x=pd(d);x.setDate(x.getDate()+n);return iso(x);}
-function weekdayDates(m){const base=pd(m.date).getDay()===0?addDays(m.date,-1):m.date;const out=[];for(const n of [-5,-4,-3,-2,-1,2,3,4,5,6]){const d=addDays(base,n);if(d>TODAY&&!isWeekend(d))out.push(d);}return out;}
-function weekdayOptions(m){
-  const out=[];
-  weekdayDates(m).forEach(d=>{if(d===m.date)return;
-    const dst=AM().filter(x=>x.date===d&&x.id!==m.id);
-    if(dst.some(x=>teamsOf(x).some(t=>teamsOf(m).includes(t))))return;
-    const extra=dayCost(dst.concat([m]),d)-dayCost(dst,d);
-    if(extra>=1000)return;
-    const sim=dst.concat([m]).map(x=>({...x,date:d,coaches:(x.coaches||[]).slice()}));solveDay(sim);
-    const mm=sim[sim.length-1];const who=mm.coaches.filter(Boolean).map(id=>coachById(id)?.name).filter(Boolean);
-    const dow=pd(d).getDay();out.push({d,extra,who,score:extra+(dow===1||dow===5?3:0)+Math.abs(pd(d)-pd(m.date))/864e5*0.5});});
-  return out.sort((a,b)=>a.score-b.score).slice(0,3).sort((a,b)=>a.d.localeCompare(b.d));
-}
-// entrenadores que se quedan con el sábado libre si se mueve m
-function freedBy(m){return (m.coaches||[]).filter(Boolean).filter(id=>!AM().some(x=>x!==m&&x.date===m.date&&(x.coaches||[]).includes(id))).map(id=>coachById(id)?.name).filter(Boolean);}
-function moveAllWk(){let n=0,none=[];
-  wkCands().forEach(m=>{const ops=weekdayOptions(m);if(!ops.length){none.push(m);return;}
-    const best=ops.slice().sort((a,b)=>a.score-b.score)[0];m.date=best.d;m.hora="";m.pista="";if(!m.estado)m.estado="propuesto";persist();n++;});
-  render();toast(none.length?`${n} pasados a entre semana · ${none.length} sin día libre`:`${n} partidos pasados a entre semana`);}
-function wkCands(){return AM().filter(m=>m.date>TODAY&&isWeekend(m.date)&&isWkCand(m)).sort((a,b)=>a.date.localeCompare(b.date));}
-function wkRow(m,withDate){const ops=weekdayOptions(m);const fr=freedBy(m);
-  return `<div class="prop"><span><b>${esc(teamLabel(m))}</b> ${m.team2?"":(m.home?"vs ":"en ")+esc(m.rival)}${withDate?` <span class="hint">· ${fshort(m.date)}</span>`:""}${fr.length?`<span class="hint"> · libera el sábado a ${esc(fr.join(" y "))}</span>`:""}</span><span class="quick">${ops.length?ops.map(o=>`<button data-move="${m.id}|${o.d}" title="${o.who.length?"Iría "+esc(o.who.join(" y ")):""}">${fshort(o.d)}</button>`).join(""):`<span class="hint">sin día libre esa semana</span>`}</span></div>`;}
-function propHTML(date,withDate){
-  const ps=proposalsFor(date);if(!ps.length)return "";
-  return `<div class="props"><h3>Propuestas de cambio${withDate?" · "+flong(date):""}</h3>${ps.map(p=>{const m=S.matches.find(x=>x.id===p.id);
-    return `<div class="prop"><span><b>${esc(teamLabel(m))}</b> ${m.home?"vs":"en"} ${esc(m.rival)} → <b>${fshort(p.to)}</b><span class="hint"> · ${p.gain>=1000?"resuelve el choque":p.gain>=40?"evita tirar de Elena o Ari":"mejor reparto de entrenadores"}</span></span><button class="btn small" data-move="${m.id}|${p.to}">Mover</button></div>`;}).join("")}</div>`;
-}
-function worst(list){if(!list)return null;if(list.some(i=>i.lvl==="crit"))return"crit";if(list.some(i=>i.lvl==="warn"))return"warn";if(list.some(i=>i.lvl==="info"))return"info";return null;}
-
-// ---------- fechas del tablero ----------
-function boardDates(){
-  const set=new Set();let d=pd("2026-10-24");const end=pd("2027-04-17");
-  while(d<=end){set.add(iso(d));d.setDate(d.getDate()+7);}
-  AM().forEach(m=>set.add(m.date));
-  return [...set].sort();
-}
-
-// ---------- render ----------
-const app=document.getElementById("app");
-const ART_URL="https://claude.ai/artifact/XFQDfHrdrywzZ6vFeJ495C";
-function famSlug(k){return slug(TM[k].n);}
-function famLink(k){return (S.famBase?S.famBase.replace(/\/?$/,"/"):ART_URL)+"#"+famSlug(k);}
-function buildFamilySite(){
-  const css=document.querySelector("style[data-app]").textContent;
-  const secs=[`<section data-k="">${renderFamily(null)}</section>`].concat(TEAMS.map(t=>`<section data-k="${famSlug(t.k)}" hidden>${renderFamily(t.k)}</section>`)).join("\n");
-  const js=`(function(){var d=new Date(),t=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+</style></head><body><div id="app"><section data-k=""><header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27</small></h1></div></div></header><main class="wrap fam"><div class="filters"><a class="chip" href="#minibenjamin" aria-pressed="false"><span class="dot" style="background:var(--t-mb)"></span>Minibenjamín</a><a class="chip" href="#benjamin" aria-pressed="false"><span class="dot" style="background:var(--t-be)"></span>Benjamín</a><a class="chip" href="#alevin-a" aria-pressed="false"><span class="dot" style="background:var(--t-aa)"></span>Alevín A</a><a class="chip" href="#alevin-b" aria-pressed="false"><span class="dot" style="background:var(--t-ab)"></span>Alevín B</a><a class="chip" href="#infantil-a1" aria-pressed="false"><span class="dot" style="background:var(--t-in)"></span>Infantil A1</a><a class="chip" href="#cadete-a1" aria-pressed="false"><span class="dot" style="background:var(--t-c1)"></span>Cadete A1</a><a class="chip" href="#cadete-a2" aria-pressed="false"><span class="dot" style="background:var(--t-c2)"></span>Cadete A2</a></div><p class="lead">Elige la categoría para ver sus partidos.</p></main></section>
+<section data-k="minibenjamin" hidden><header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27 · Minibenjamín</small></h1></div></div></header><main class="wrap fam"><div class="filters"><a class="chip" href="#minibenjamin" aria-pressed="true"><span class="dot" style="background:var(--t-mb)"></span>Minibenjamín</a><a class="chip" href="#benjamin" aria-pressed="false"><span class="dot" style="background:var(--t-be)"></span>Benjamín</a><a class="chip" href="#alevin-a" aria-pressed="false"><span class="dot" style="background:var(--t-aa)"></span>Alevín A</a><a class="chip" href="#alevin-b" aria-pressed="false"><span class="dot" style="background:var(--t-ab)"></span>Alevín B</a><a class="chip" href="#infantil-a1" aria-pressed="false"><span class="dot" style="background:var(--t-in)"></span>Infantil A1</a><a class="chip" href="#cadete-a1" aria-pressed="false"><span class="dot" style="background:var(--t-c1)"></span>Cadete A1</a><a class="chip" href="#cadete-a2" aria-pressed="false"><span class="dot" style="background:var(--t-c2)"></span>Cadete A2</a></div><section class="panel"><h2>Próximos partidos</h2><p class="legend"><i></i> Partidos fuera</p><div class="futl"><div class="fm  away" data-d="2026-11-14"><div class="fd"><span class="fdw">sáb</span><span class="fdn">14</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Rio Sella (local) – CP Reconquista</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-14"><div class="fd"><span class="fdw">sáb</span><span class="fdn">14</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">Col. Inmaculada D – CP Reconquista</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-28"><div class="fd"><span class="fdw">sáb</span><span class="fdn">28</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP El Quirinal B – CP Reconquista</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-28"><div class="fd"><span class="fdw">sáb</span><span class="fdn">28</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">Col. Inmaculada D – CP Reconquista</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-12"><div class="fd"><span class="fdw">sáb</span><span class="fdn">12</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – CP El Quirinal B</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-12"><div class="fd"><span class="fdw">sáb</span><span class="fdn">12</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – Colegio Loyola A</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-16"><div class="fd"><span class="fdw">sáb</span><span class="fdn">16</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">CP Rio Sella – CP Reconquista</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-16"><div class="fd"><span class="fdw">sáb</span><span class="fdn">16</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">CP El Quirinal A – CP Reconquista</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-30"><div class="fd"><span class="fdw">sáb</span><span class="fdn">30</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">Colegio Loyola B – CP Reconquista</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-30"><div class="fd"><span class="fdw">sáb</span><span class="fdn">30</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">Colegio Loyola A – CP Reconquista</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – CP El Quirinal A</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – Colegio Loyola B</div><div class="fw">Sede por confirmar · hora por confirmar</div></div></div></div></section><details class="panel pastd" hidden><summary>Partidos ya jugados (<span class="pn">0</span>)</summary></details><p class="hint">Actualizado 4 de noviembre a las 22:57. Las horas y cambios pueden variar; el club avisará de cualquier novedad.</p></main></section>
+<section data-k="benjamin" hidden><header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27 · Benjamín</small></h1></div></div></header><main class="wrap fam"><div class="filters"><a class="chip" href="#minibenjamin" aria-pressed="false"><span class="dot" style="background:var(--t-mb)"></span>Minibenjamín</a><a class="chip" href="#benjamin" aria-pressed="true"><span class="dot" style="background:var(--t-be)"></span>Benjamín</a><a class="chip" href="#alevin-a" aria-pressed="false"><span class="dot" style="background:var(--t-aa)"></span>Alevín A</a><a class="chip" href="#alevin-b" aria-pressed="false"><span class="dot" style="background:var(--t-ab)"></span>Alevín B</a><a class="chip" href="#infantil-a1" aria-pressed="false"><span class="dot" style="background:var(--t-in)"></span>Infantil A1</a><a class="chip" href="#cadete-a1" aria-pressed="false"><span class="dot" style="background:var(--t-c1)"></span>Cadete A1</a><a class="chip" href="#cadete-a2" aria-pressed="false"><span class="dot" style="background:var(--t-c2)"></span>Cadete A2</a></div><section class="panel"><h2>Próximos partidos</h2><p class="legend"><i></i> Partidos fuera</p><div class="futl"><div class="fm  " data-d="2026-11-14"><div class="fd"><span class="fdw">sáb</span><span class="fdn">14</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – C.P. La Fresneda</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-21"><div class="fd"><span class="fdw">sáb</span><span class="fdn">21</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">Valdellera – CP Reconquista</div><div class="fw">Fuera · Valdellera · hora por confirmar</div></div></div><div class="fm  " data-d="2026-11-28"><div class="fd"><span class="fdw">sáb</span><span class="fdn">28</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – Peña Tú A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-12-12"><div class="fd"><span class="fdw">sáb</span><span class="fdn">12</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">CP Peña TU C – CP Reconquista</div><div class="fw">Fuera · CP Peña TU C · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-19"><div class="fd"><span class="fdw">sáb</span><span class="fdn">19</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – Peña Tú B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-16"><div class="fd"><span class="fdw">sáb</span><span class="fdn">16</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – Ceip L&#39;ablanu</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-23"><div class="fd"><span class="fdw">sáb</span><span class="fdn">23</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">Colegio Internacional Meres – CP Reconquista</div><div class="fw">Fuera · Colegio Internacional Meres · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-02-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">C.P. La Fresneda – CP Reconquista</div><div class="fw">Fuera · C.P. La Fresneda · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – Valdellera</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-02-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">Peña Tú A – CP Reconquista</div><div class="fw">Fuera · Peña Tú A · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – CP Peña TU C</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">Peña Tú B – CP Reconquista</div><div class="fw">Fuera · Peña Tú B · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">Ceip L&#39;ablanu – CP Reconquista</div><div class="fw">Fuera · Ceip L&#39;ablanu · hora por confirmar</div></div></div><div class="fm  " data-d="2027-04-10"><div class="fd"><span class="fdw">sáb</span><span class="fdn">10</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista – Colegio Internacional Meres</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div></div></section><details class="panel pastd" hidden><summary>Partidos ya jugados (<span class="pn">0</span>)</summary></details><p class="hint">Actualizado 4 de noviembre a las 22:57. Las horas y cambios pueden variar; el club avisará de cualquier novedad.</p></main></section>
+<section data-k="alevin-a" hidden><header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27 · Alevín A</small></h1></div></div></header><main class="wrap fam"><div class="filters"><a class="chip" href="#minibenjamin" aria-pressed="false"><span class="dot" style="background:var(--t-mb)"></span>Minibenjamín</a><a class="chip" href="#benjamin" aria-pressed="false"><span class="dot" style="background:var(--t-be)"></span>Benjamín</a><a class="chip" href="#alevin-a" aria-pressed="true"><span class="dot" style="background:var(--t-aa)"></span>Alevín A</a><a class="chip" href="#alevin-b" aria-pressed="false"><span class="dot" style="background:var(--t-ab)"></span>Alevín B</a><a class="chip" href="#infantil-a1" aria-pressed="false"><span class="dot" style="background:var(--t-in)"></span>Infantil A1</a><a class="chip" href="#cadete-a1" aria-pressed="false"><span class="dot" style="background:var(--t-c1)"></span>Cadete A1</a><a class="chip" href="#cadete-a2" aria-pressed="false"><span class="dot" style="background:var(--t-c2)"></span>Cadete A2</a></div><section class="panel"><h2>Próximos partidos</h2><p class="legend"><i></i> Partidos fuera</p><div class="futl"><div class="fm  " data-d="2026-11-04"><div class="fd"><span class="fdw">mié</span><span class="fdn">4</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Reconquista B</div><div class="fw">En casa · Cangas de Onís · <b>17:00</b></div><span class="tag est-comunicado">Fecha cambiada (antes sáb 7 nov)</span></div></div><div class="fm  away" data-d="2026-11-11"><div class="fd"><span class="fdw">mié</span><span class="fdn">11</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Rio Sella A – CP Reconquista A</div><div class="fw">Fuera · CP Rio Sella A · <b>17:00</b></div><span class="tag est-pendiente">Nueva fecha pendiente de confirmar</span></div></div><div class="fm  away" data-d="2026-11-11"><div class="fd"><span class="fdw">mié</span><span class="fdn">11</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Rio Sella B – CP Reconquista A</div><div class="fw">Fuera · CP Rio Sella B · <b>18:00</b></div><span class="tag est-pendiente">Nueva fecha pendiente de confirmar</span></div></div><div class="fm  " data-d="2026-11-28"><div class="fd"><span class="fdw">sáb</span><span class="fdn">28</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – Peña Tú A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-12-12"><div class="fd"><span class="fdw">sáb</span><span class="fdn">12</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">Valdellera – CP Reconquista A</div><div class="fw">Fuera · Valdellera · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-19"><div class="fd"><span class="fdw">sáb</span><span class="fdn">19</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Rio Sella C</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-16"><div class="fd"><span class="fdw">sáb</span><span class="fdn">16</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">CP Peña TU C – CP Reconquista A</div><div class="fw">Fuera · CP Peña TU C · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-23"><div class="fd"><span class="fdw">sáb</span><span class="fdn">23</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Valdellera 9X18</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-30"><div class="fd"><span class="fdw">sáb</span><span class="fdn">30</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">Peña Tú B – CP Reconquista A</div><div class="fw">Fuera · Peña Tú B · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Reconquista B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Rio Sella A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Rio Sella B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div><span class="tag est-pendiente">Cambio de sede pendiente de confirmar</span></div></div><div class="fm  away" data-d="2027-03-06"><div class="fd"><span class="fdw">sáb</span><span class="fdn">6</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">Peña Tú A – CP Reconquista A</div><div class="fw">Fuera · Peña Tú A · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – Valdellera</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Rio Sella C – CP Reconquista A</div><div class="fw">Fuera · CP Rio Sella C · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Peña TU C</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-04-10"><div class="fd"><span class="fdw">sáb</span><span class="fdn">10</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">CP Valdellera 9X18 – CP Reconquista A</div><div class="fw">Fuera · CP Valdellera 9X18 · hora por confirmar</div></div></div><div class="fm  " data-d="2027-04-17"><div class="fd"><span class="fdw">sáb</span><span class="fdn">17</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – Peña Tú B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div></div></section><details class="panel pastd" hidden><summary>Partidos ya jugados (<span class="pn">0</span>)</summary></details><p class="hint">Actualizado 4 de noviembre a las 22:57. Las horas y cambios pueden variar; el club avisará de cualquier novedad.</p></main></section>
+<section data-k="alevin-b" hidden><header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27 · Alevín B</small></h1></div></div></header><main class="wrap fam"><div class="filters"><a class="chip" href="#minibenjamin" aria-pressed="false"><span class="dot" style="background:var(--t-mb)"></span>Minibenjamín</a><a class="chip" href="#benjamin" aria-pressed="false"><span class="dot" style="background:var(--t-be)"></span>Benjamín</a><a class="chip" href="#alevin-a" aria-pressed="false"><span class="dot" style="background:var(--t-aa)"></span>Alevín A</a><a class="chip" href="#alevin-b" aria-pressed="true"><span class="dot" style="background:var(--t-ab)"></span>Alevín B</a><a class="chip" href="#infantil-a1" aria-pressed="false"><span class="dot" style="background:var(--t-in)"></span>Infantil A1</a><a class="chip" href="#cadete-a1" aria-pressed="false"><span class="dot" style="background:var(--t-c1)"></span>Cadete A1</a><a class="chip" href="#cadete-a2" aria-pressed="false"><span class="dot" style="background:var(--t-c2)"></span>Cadete A2</a></div><section class="panel"><h2>Próximos partidos</h2><p class="legend"><i></i> Partidos fuera</p><div class="futl"><div class="fm  " data-d="2026-11-04"><div class="fd"><span class="fdw">mié</span><span class="fdn">4</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Reconquista B</div><div class="fw">En casa · Cangas de Onís · <b>17:00</b></div><span class="tag est-comunicado">Fecha cambiada (antes sáb 7 nov)</span></div></div><div class="fm  " data-d="2026-11-14"><div class="fd"><span class="fdw">sáb</span><span class="fdn">14</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista B – Peña Tú A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-21"><div class="fd"><span class="fdw">sáb</span><span class="fdn">21</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">Valdellera – CP Reconquista B</div><div class="fw">Fuera · Valdellera · hora por confirmar</div></div></div><div class="fm  " data-d="2026-11-28"><div class="fd"><span class="fdw">sáb</span><span class="fdn">28</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista B – CP Rio Sella C</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-12-12"><div class="fd"><span class="fdw">sáb</span><span class="fdn">12</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">CP Peña TU C – CP Reconquista B</div><div class="fw">Fuera · CP Peña TU C · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-19"><div class="fd"><span class="fdw">sáb</span><span class="fdn">19</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista B – CP Valdellera 9X18</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-16"><div class="fd"><span class="fdw">sáb</span><span class="fdn">16</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">Peña Tú B – CP Reconquista B</div><div class="fw">Fuera · Peña Tú B · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-23"><div class="fd"><span class="fdw">sáb</span><span class="fdn">23</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">CP Rio Sella B – CP Reconquista B</div><div class="fw">Fuera · CP Rio Sella B · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-30"><div class="fd"><span class="fdw">sáb</span><span class="fdn">30</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista B – CP Rio Sella A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista A – CP Reconquista B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-02-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">Peña Tú A – CP Reconquista B</div><div class="fw">Fuera · Peña Tú A · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista B – Valdellera</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-06"><div class="fd"><span class="fdw">sáb</span><span class="fdn">6</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Rio Sella C – CP Reconquista B</div><div class="fw">Fuera · CP Rio Sella C · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista B – CP Peña TU C</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Valdellera 9X18 – CP Reconquista B</div><div class="fw">Fuera · CP Valdellera 9X18 · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista B – Peña Tú B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2027-04-10"><div class="fd"><span class="fdw">sáb</span><span class="fdn">10</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">CP Reconquista B – CP Rio Sella B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-04-17"><div class="fd"><span class="fdw">sáb</span><span class="fdn">17</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">CP Rio Sella A – CP Reconquista B</div><div class="fw">Fuera · CP Rio Sella A · hora por confirmar</div></div></div></div></section><details class="panel pastd" hidden><summary>Partidos ya jugados (<span class="pn">0</span>)</summary></details><p class="hint">Actualizado 4 de noviembre a las 22:57. Las horas y cambios pueden variar; el club avisará de cualquier novedad.</p></main></section>
+<section data-k="infantil-a1" hidden><header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27 · Infantil A1</small></h1></div></div></header><main class="wrap fam"><div class="filters"><a class="chip" href="#minibenjamin" aria-pressed="false"><span class="dot" style="background:var(--t-mb)"></span>Minibenjamín</a><a class="chip" href="#benjamin" aria-pressed="false"><span class="dot" style="background:var(--t-be)"></span>Benjamín</a><a class="chip" href="#alevin-a" aria-pressed="false"><span class="dot" style="background:var(--t-aa)"></span>Alevín A</a><a class="chip" href="#alevin-b" aria-pressed="false"><span class="dot" style="background:var(--t-ab)"></span>Alevín B</a><a class="chip" href="#infantil-a1" aria-pressed="true"><span class="dot" style="background:var(--t-in)"></span>Infantil A1</a><a class="chip" href="#cadete-a1" aria-pressed="false"><span class="dot" style="background:var(--t-c1)"></span>Cadete A1</a><a class="chip" href="#cadete-a2" aria-pressed="false"><span class="dot" style="background:var(--t-c2)"></span>Cadete A2</a></div><section class="panel"><h2>Próximos partidos</h2><p class="legend"><i></i> Partidos fuera</p><div class="futl"><div class="fm  " data-d="2026-10-24"><div class="fd"><span class="fdw">sáb</span><span class="fdn">24</span><span class="fdm">oct</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – CV OVIEDO A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2026-11-07"><div class="fd"><span class="fdw">sáb</span><span class="fdn">7</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – CID JOVELLANOS A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-14"><div class="fd"><span class="fdw">sáb</span><span class="fdn">14</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">RGC COVADONGA A – IES Rey Pelayo</div><div class="fw">Fuera · RGC COVADONGA A · hora por confirmar</div></div></div><div class="fm  " data-d="2026-11-21"><div class="fd"><span class="fdw">sáb</span><span class="fdn">21</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – IES LLANES P</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-22"><div class="fd"><span class="fdw">dom</span><span class="fdn">22</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">Col. Inmaculada A – IES Rey Pelayo</div><div class="fw">Fuera · Col. Inmaculada A · hora por confirmar</div></div></div><div class="fm  " data-d="2026-11-28"><div class="fd"><span class="fdw">sáb</span><span class="fdn">28</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – CLUB NÁUTICO CARREÑO A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-12"><div class="fd"><span class="fdw">sáb</span><span class="fdn">12</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – RGC COVADONGA B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-12-19"><div class="fd"><span class="fdw">sáb</span><span class="fdn">19</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">SAN IGNACIO B – IES Rey Pelayo</div><div class="fw">Fuera · SAN IGNACIO B · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-16"><div class="fd"><span class="fdw">sáb</span><span class="fdn">16</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – SAN IGNACIO A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-23"><div class="fd"><span class="fdw">sáb</span><span class="fdn">23</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">A.D. LOS CAMPOS – IES Rey Pelayo</div><div class="fw">Fuera · A.D. LOS CAMPOS · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-30"><div class="fd"><span class="fdw">sáb</span><span class="fdn">30</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – CLUB VOLEIBOL LA CALZADA A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-02-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CV OVIEDO A – IES Rey Pelayo</div><div class="fw">Fuera · CV OVIEDO A · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-02-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CID JOVELLANOS A – IES Rey Pelayo</div><div class="fw">Fuera · CID JOVELLANOS A · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – RGC COVADONGA A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-06"><div class="fd"><span class="fdw">sáb</span><span class="fdn">6</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">IES LLANES P – IES Rey Pelayo</div><div class="fw">Fuera · IES LLANES P · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – Col. Inmaculada A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CLUB NÁUTICO CARREÑO A – IES Rey Pelayo</div><div class="fw">Fuera · CLUB NÁUTICO CARREÑO A · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-04-03"><div class="fd"><span class="fdw">sáb</span><span class="fdn">3</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">RGC COVADONGA B – IES Rey Pelayo</div><div class="fw">Fuera · RGC COVADONGA B · hora por confirmar</div></div></div><div class="fm  " data-d="2027-04-10"><div class="fd"><span class="fdw">sáb</span><span class="fdn">10</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – SAN IGNACIO B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-04-17"><div class="fd"><span class="fdw">sáb</span><span class="fdn">17</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">SAN IGNACIO A – IES Rey Pelayo</div><div class="fw">Fuera · SAN IGNACIO A · hora por confirmar</div></div></div></div></section><details class="panel pastd" hidden><summary>Partidos ya jugados (<span class="pn">0</span>)</summary></details><p class="hint">Actualizado 4 de noviembre a las 22:57. Las horas y cambios pueden variar; el club avisará de cualquier novedad.</p></main></section>
+<section data-k="cadete-a1" hidden><header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27 · Cadete A1</small></h1></div></div></header><main class="wrap fam"><div class="filters"><a class="chip" href="#minibenjamin" aria-pressed="false"><span class="dot" style="background:var(--t-mb)"></span>Minibenjamín</a><a class="chip" href="#benjamin" aria-pressed="false"><span class="dot" style="background:var(--t-be)"></span>Benjamín</a><a class="chip" href="#alevin-a" aria-pressed="false"><span class="dot" style="background:var(--t-aa)"></span>Alevín A</a><a class="chip" href="#alevin-b" aria-pressed="false"><span class="dot" style="background:var(--t-ab)"></span>Alevín B</a><a class="chip" href="#infantil-a1" aria-pressed="false"><span class="dot" style="background:var(--t-in)"></span>Infantil A1</a><a class="chip" href="#cadete-a1" aria-pressed="true"><span class="dot" style="background:var(--t-c1)"></span>Cadete A1</a><a class="chip" href="#cadete-a2" aria-pressed="false"><span class="dot" style="background:var(--t-c2)"></span>Cadete A2</a></div><section class="panel"><h2>Próximos partidos</h2><p class="legend"><i></i> Partidos fuera</p><div class="futl"><div class="fm  " data-d="2026-10-24"><div class="fd"><span class="fdw">sáb</span><span class="fdn">24</span><span class="fdm">oct</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – CV OVIEDO A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2026-11-07"><div class="fd"><span class="fdw">sáb</span><span class="fdn">7</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – CID JOVELLANOS A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-14"><div class="fd"><span class="fdw">sáb</span><span class="fdn">14</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">RGC COVADONGA A – IES Rey Pelayo</div><div class="fw">Fuera · RGC COVADONGA A · hora por confirmar</div></div></div><div class="fm  " data-d="2026-11-21"><div class="fd"><span class="fdw">sáb</span><span class="fdn">21</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – IES LLANES P</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-22"><div class="fd"><span class="fdw">dom</span><span class="fdn">22</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">Col. Inmaculada A – IES Rey Pelayo</div><div class="fw">Fuera · Col. Inmaculada A · hora por confirmar</div></div></div><div class="fm  " data-d="2026-11-28"><div class="fd"><span class="fdw">sáb</span><span class="fdn">28</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – AD LA CURTIDORA A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-12"><div class="fd"><span class="fdw">sáb</span><span class="fdn">12</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – RGC COVADONGA B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-12-19"><div class="fd"><span class="fdw">sáb</span><span class="fdn">19</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">SAN IGNACIO B – IES Rey Pelayo</div><div class="fw">Fuera · SAN IGNACIO B · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-16"><div class="fd"><span class="fdw">sáb</span><span class="fdn">16</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – SAN IGNACIO A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-23"><div class="fd"><span class="fdw">sáb</span><span class="fdn">23</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">A.D. LOS CAMPOS – IES Rey Pelayo</div><div class="fw">Fuera · A.D. LOS CAMPOS · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-30"><div class="fd"><span class="fdw">sáb</span><span class="fdn">30</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – CV LA CALZADA A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-02-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CV OVIEDO A – IES Rey Pelayo</div><div class="fw">Fuera · CV OVIEDO A · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-02-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CID JOVELLANOS A – IES Rey Pelayo</div><div class="fw">Fuera · CID JOVELLANOS A · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – RGC COVADONGA A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-06"><div class="fd"><span class="fdw">sáb</span><span class="fdn">6</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">IES LLANES P – IES Rey Pelayo</div><div class="fw">Fuera · IES LLANES P · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-07"><div class="fd"><span class="fdw">dom</span><span class="fdn">7</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – Col. Inmaculada A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">AD LA CURTIDORA A – IES Rey Pelayo</div><div class="fw">Fuera · AD LA CURTIDORA A · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">RGC COVADONGA B – IES Rey Pelayo</div><div class="fw">Fuera · RGC COVADONGA B · hora por confirmar</div></div></div><div class="fm  " data-d="2027-04-03"><div class="fd"><span class="fdw">sáb</span><span class="fdn">3</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo – SAN IGNACIO B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-04-10"><div class="fd"><span class="fdw">sáb</span><span class="fdn">10</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">SAN IGNACIO A – IES Rey Pelayo</div><div class="fw">Fuera · SAN IGNACIO A · hora por confirmar</div></div></div></div></section><details class="panel pastd" hidden><summary>Partidos ya jugados (<span class="pn">0</span>)</summary></details><p class="hint">Actualizado 4 de noviembre a las 22:57. Las horas y cambios pueden variar; el club avisará de cualquier novedad.</p></main></section>
+<section data-k="cadete-a2" hidden><header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27 · Cadete A2</small></h1></div></div></header><main class="wrap fam"><div class="filters"><a class="chip" href="#minibenjamin" aria-pressed="false"><span class="dot" style="background:var(--t-mb)"></span>Minibenjamín</a><a class="chip" href="#benjamin" aria-pressed="false"><span class="dot" style="background:var(--t-be)"></span>Benjamín</a><a class="chip" href="#alevin-a" aria-pressed="false"><span class="dot" style="background:var(--t-aa)"></span>Alevín A</a><a class="chip" href="#alevin-b" aria-pressed="false"><span class="dot" style="background:var(--t-ab)"></span>Alevín B</a><a class="chip" href="#infantil-a1" aria-pressed="false"><span class="dot" style="background:var(--t-in)"></span>Infantil A1</a><a class="chip" href="#cadete-a1" aria-pressed="false"><span class="dot" style="background:var(--t-c1)"></span>Cadete A1</a><a class="chip" href="#cadete-a2" aria-pressed="true"><span class="dot" style="background:var(--t-c2)"></span>Cadete A2</a></div><section class="panel"><h2>Próximos partidos</h2><p class="legend"><i></i> Partidos fuera</p><div class="futl"><div class="fm  away" data-d="2026-11-07"><div class="fd"><span class="fdw">sáb</span><span class="fdn">7</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">CD Nava Voley – IES Rey Pelayo B</div><div class="fw">Fuera · CD Nava Voley · hora por confirmar</div><span class="tag est-pendiente">Sin confirmar que se juegue</span></div></div><div class="fm  " data-d="2026-11-14"><div class="fd"><span class="fdw">sáb</span><span class="fdn">14</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – CD Creimi F</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div><span class="tag est-pendiente">Cambio de sede pendiente de confirmar</span></div></div><div class="fm  " data-d="2026-11-21"><div class="fd"><span class="fdw">sáb</span><span class="fdn">21</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – Club Voleibol Noreña B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2026-11-28"><div class="fd"><span class="fdw">sáb</span><span class="fdn">28</span><span class="fdm">nov</span></div>
+      <div style="min-width:0"><div class="fv">C.V. Siero B – IES Rey Pelayo B</div><div class="fw">Fuera · C.V. Siero B · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-12"><div class="fd"><span class="fdw">sáb</span><span class="fdn">12</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – IES Llanes D</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2026-12-19"><div class="fd"><span class="fdw">sáb</span><span class="fdn">19</span><span class="fdm">dic</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – CD Creimi B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-16"><div class="fd"><span class="fdw">sáb</span><span class="fdn">16</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – IES Llanes C</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-01-23"><div class="fd"><span class="fdw">sáb</span><span class="fdn">23</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">C.V. Siero A – IES Rey Pelayo B</div><div class="fw">Fuera · C.V. Siero A · hora por confirmar</div></div></div><div class="fm  " data-d="2027-01-30"><div class="fd"><span class="fdw">sáb</span><span class="fdn">30</span><span class="fdm">ene</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – Club Voleibol Noreña A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  " data-d="2027-02-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – CD Nava Voley</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-02-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">CD Creimi F – IES Rey Pelayo B</div><div class="fw">Fuera · CD Creimi F · hora por confirmar</div><span class="tag est-pendiente">Cambio de sede pendiente de confirmar</span></div></div><div class="fm  away" data-d="2027-02-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">feb</span></div>
+      <div style="min-width:0"><div class="fv">Club Voleibol Noreña B – IES Rey Pelayo B</div><div class="fw">Fuera · Club Voleibol Noreña B · hora por confirmar</div></div></div><div class="fm  " data-d="2027-03-06"><div class="fd"><span class="fdw">sáb</span><span class="fdn">6</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – C.V. Siero B</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-13"><div class="fd"><span class="fdw">sáb</span><span class="fdn">13</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">IES Llanes D – IES Rey Pelayo B</div><div class="fw">Fuera · IES Llanes D · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-20"><div class="fd"><span class="fdw">sáb</span><span class="fdn">20</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">CD Creimi B – IES Rey Pelayo B</div><div class="fw">Fuera · CD Creimi B · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-03-27"><div class="fd"><span class="fdw">sáb</span><span class="fdn">27</span><span class="fdm">mar</span></div>
+      <div style="min-width:0"><div class="fv">IES Llanes C – IES Rey Pelayo B</div><div class="fw">Fuera · IES Llanes C · hora por confirmar</div></div></div><div class="fm  " data-d="2027-04-10"><div class="fd"><span class="fdw">sáb</span><span class="fdn">10</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">IES Rey Pelayo B – C.V. Siero A</div><div class="fw">En casa · Cangas de Onís · hora por confirmar</div></div></div><div class="fm  away" data-d="2027-04-17"><div class="fd"><span class="fdw">sáb</span><span class="fdn">17</span><span class="fdm">abr</span></div>
+      <div style="min-width:0"><div class="fv">Club Voleibol Noreña A – IES Rey Pelayo B</div><div class="fw">Fuera · Club Voleibol Noreña A · hora por confirmar</div></div></div></div></section><details class="panel pastd" hidden><summary>Partidos ya jugados (<span class="pn">0</span>)</summary></details><p class="hint">Actualizado 4 de noviembre a las 22:57. Las horas y cambios pueden variar; el club avisará de cualquier novedad.</p></main></section></div><script>(function(){var d=new Date(),t=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 document.querySelectorAll("section[data-k]").forEach(function(s){var f=s.querySelector(".futl"),p=s.querySelector(".pastd");if(!f||!p)return;var n=0;f.querySelectorAll(".fm").forEach(function(r){if(r.getAttribute("data-d")<t){r.classList.add("past");p.appendChild(r);n++;}});if(n){p.hidden=false;p.querySelector(".pn").textContent=n;}if(!f.children.length){var e=document.createElement("p");e.className="lead";e.textContent="No quedan partidos por jugar.";f.appendChild(e);}});
 function show(){var h="";try{h=decodeURIComponent(location.hash.slice(1));}catch(_){}var ok=false;document.querySelectorAll("section[data-k]").forEach(function(s){var on=s.getAttribute("data-k")===h;s.hidden=!on;if(on)ok=true;});if(!ok)document.querySelector('section[data-k=""]').hidden=false;window.scrollTo(0,0);}
-window.addEventListener("hashchange",show);show();})();`;
-  return `<!DOCTYPE html>\n<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Partidos CV Cangas de Onís</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
-<style>${css}</style></head><body><div id="app">${secs}</div><script>${js}<\/script></body></html>`;}
-const STAFF="equipo-3pudk4";
-function staffLink(cid){const c=cid&&coachById(cid);return ART_URL+"#"+STAFF+(c?"/"+slug(c.name):"");}
-function famStatus(m){
-  if(m.duda)return ["warn","Sin confirmar que se juegue"];
-  if(changed(m)&&m.estado!=="comunicado")return ["warn",(m.date!==m.orig?"Nueva fecha":"Cambio de sede")+" pendiente de confirmar"];
-  if(changed(m))return ["ok",m.date!==m.orig?"Fecha cambiada (antes "+fshort(m.orig)+")":"Cambio de sede confirmado"];
-  return null;}
-function famWhere(m){if(m.sedeDuda)return "Sede por confirmar";if(m.home)return "En casa · Cangas de Onís";return "Fuera · "+(m.sede||m.rival);}
-function renderFamily(sk){
-  const st0=sk!==undefined;const k=st0?sk:(ui.fam&&TM[ui.fam]?ui.fam:null);
-  let h=`<header class="top"><div class="wrap"><div class="toprow"><h1>Partidos CV Cangas de Onís<small>Temporada 2026-27${k?" · "+esc(TM[k].n):""}</small></h1></div></div></header><main class="wrap fam">`;
-  h+=`<div class="filters">${TEAMS.map(t=>`<a class="chip" href="#${famSlug(t.k)}" aria-pressed="${t.k===k}"><span class="dot" style="background:var(${t.col})"></span>${t.n}</a>`).join("")}</div>`;
-  if(!k)return h+`<p class="lead">Elige la categoría para ver sus partidos.</p></main>`;
-  const list=S.matches.filter(m=>teamsOf(m).includes(k)&&!isSusp(m)&&!m.ajeno).sort((a,b)=>a.date.localeCompare(b.date)||(a.hora||"99").localeCompare(b.hora||"99"));
-  if(!list.length)h+=`<section class="panel"><p class="lead">El calendario de ${esc(TM[k].n)} está pendiente de que lo publique la federación.</p></section>`;
-  const fut=st0?list:list.filter(m=>m.date>=TODAY),past=st0?[]:list.filter(m=>m.date<TODAY);
-  const row=m=>{const st=famStatus(m);const us={IN:"IES Rey Pelayo",C1:"IES Rey Pelayo",C2:"IES Rey Pelayo B",MB:"CP Reconquista",BE:"CP Reconquista",AA:"CP Reconquista A",AB:"CP Reconquista B"}[k];const vs=m.team2?"CP Reconquista A – CP Reconquista B":(m.home?us+" – "+m.rival:m.rival+" – "+us);
-    return `<div class="fm ${!st0&&m.date<TODAY?"past":""} ${m.home?"":"away"}" data-d="${m.date}"><div class="fd"><span class="fdw">${DOW[pd(m.date).getDay()]}</span><span class="fdn">${pd(m.date).getDate()}</span><span class="fdm">${MON[pd(m.date).getMonth()]}</span></div>
-      <div style="min-width:0"><div class="fv">${esc(vs)}</div><div class="fw">${esc(famWhere(m))} · ${m.hora?"<b>"+esc(m.hora)+"</b>":"hora por confirmar"}</div>${st?`<span class="tag ${st[0]==="warn"?"est-pendiente":"est-comunicado"}">${esc(st[1])}</span>`:""}</div></div>`;};
-  if(fut.length)h+=`<section class="panel"><h2>Próximos partidos</h2><p class="legend"><i></i> Partidos fuera</p><div class="futl">${fut.map(row).join("")}</div></section>`;
-  if(st0&&list.length)h+=`<details class="panel pastd" hidden><summary>Partidos ya jugados (<span class="pn">0</span>)</summary></details>`;
-  if(past.length)h+=`<details class="panel"><summary>Partidos ya jugados (${past.length})</summary>${past.map(row).join("")}</details>`;
-  h+=`<p class="hint">Actualizado ${S.savedAt?new Date(S.savedAt).toLocaleString("es-ES",{day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"}):""}. Las horas y cambios pueden variar; el club avisará de cualquier novedad.</p></main>`;
-  return h;}
-function render(){
-  if(ui.fam!==null){app.innerHTML=renderFamily();return;}
-  const A=analyze();
-  const crit=A.issues.filter(i=>i.lvl==="crit").length,warn=A.issues.filter(i=>i.lvl==="warn").length;
-  const moved=AM().filter(changed).length;
-  let h=`<header class="top"><div class="wrap"><div class="toprow">
-    <h1>Planificador de partidos<small>CV Cangas de Onís · temporada 2026-27</small></h1>
-    <div class="savebox"><span class="status ${dirty?"dirty":""}" id="st">${ui.ro?(S.savedAt?"Actualizado "+new Date(S.savedAt).toLocaleString("es-ES",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}):""):dirty?"Cambios sin guardar":(S.savedAt?"Guardado "+new Date(S.savedAt).toLocaleString("es-ES",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}):"Calendario federativo")}</span>
-    ${ui.ro?"":`<button class="btn primary" id="save" ${dirty&&canSave!==false?"":"disabled"}>Guardar versión</button>`}</div></div>${ui.ro?`<p class="robar">Vista de entrenadores · solo lectura. Lo que muevas aquí no se guarda ni lo ve nadie; los cambios los hace Dani. Sí puedes marcar en «Mis partidos» los días que no puedes.</p>`:""}
-    <nav class="tabs" role="tablist">
-      ${tabBtn("cal","Calendario","")}
-      ${tabBtn("iss","Conflictos",crit?`<span class="count crit">${crit}</span>`:(warn?`<span class="count warn">${warn}</span>`:`<span class="count">0</span>`))}
-      ${tabBtn("chg","Cambios",`<span class="count">${moved}</span>`)}
-      ${tabBtn("res","Reservas","")}
-      ${tabBtn("yo","Mis partidos","")}
-      ${tabBtn("cfg","Pistas y entrenadores","")}
-    </nav></div></header><main class="wrap">`;
-  if(canSave===false) h+=`<div class="banner">Puedes mover partidos y probar opciones, pero no tienes permiso para guardar versiones de esta página. Tus cambios se quedan en este navegador.</div>`;
-
-  if(S.susp.length&&(ui.tab==="cal"||ui.tab==="iss")) h+=`<div class="banner"><span><b>${S.susp.map(k=>TM[k].n).join(", ")}</b>: calendario en suspenso hasta que la FVBPA publique el nuevo. Sus partidos no cuentan para pistas, entrenadores ni avisos.</span><button class="btn small" data-go="cfg">Cambiar</button></div>`;
-  if(ui.tab==="cal") h+=renderBoard(A);
-  if(ui.tab==="iss") h+=renderIssues(A);
-  if(ui.tab==="chg") h+=renderChanges();
-  if(ui.tab==="cfg") h+=renderCfg();
-  if(ui.tab==="res") h+=renderRes();
-  if(ui.tab==="yo") h+=renderMine();
-  h+=`</main>`;
-  if(ui.sheet) h+=renderSheet(A);
-  const sy=window.scrollY; app.innerHTML=h; window.scrollTo(0,sy);
-  if(ui.sheet){const f=document.getElementById("f-date");if(f&&ui.sheet.focus){f.focus();ui.sheet.focus=false;}}
-}
-function tabBtn(k,l,extra){return `<button role="tab" aria-selected="${ui.tab===k}" data-tab="${k}">${l}${extra}</button>`;}
-
-function renderBoard(A){
-  let h=`<div class="filters"><span class="lbl">Equipos</span>`;
-  TEAMS.forEach(t=>{h+=`<button class="chip" aria-pressed="${ui.teams.has(t.k)}" data-team="${t.k}"><span class="dot" style="background:var(${t.col})"></span>${t.n}</button>`;});
-  h+=`<label class="toggle"><input type="checkbox" id="tg-free" ${ui.showFree?"checked":""}> Sábados libres</label>
-      <label class="toggle"><input type="checkbox" id="tg-past" ${ui.showPast?"checked":""}> Jornadas pasadas</label>
-      <span style="margin-left:auto;display:flex;gap:6px;flex-wrap:wrap"><button class="btn small" data-autoall="1">Repartir pistas de toda la temporada</button><button class="btn small" id="addm">Añadir partido</button></span></div>`;
-  h+=`<div class="board">`;
-  boardDates().forEach(date=>{
-    const past=date<TODAY; if(past&&!ui.showPast) return;
-    const all=AM().filter(m=>m.date===date);
-    const ms=all.filter(m=>teamsOf(m).some(t=>ui.teams.has(t)));
-    if(!all.length&&!ui.showFree) return;
-    const homes=all.filter(m=>m.home),aways=all.filter(m=>!m.home);
-    const dayIss=A.issues.filter(i=>i.date===date);
-    const c=dayIss.filter(i=>i.lvl==="crit").length,w=dayIss.filter(i=>i.lvl==="warn").length;
-    const FR=franjasFor(date);const total=S.pistas.length*FR.length;
-    const used={};FR.forEach(f=>S.pistas.forEach(p=>{const n=homes.filter(m=>m.pista===p.id&&m.hora&&span(m)[0]<=toMin(f)&&toMin(f)<span(m)[1]).length;if(n)used[p.id+"|"+f]=n;}));
-    let bars="";FR.forEach(f=>S.pistas.forEach(p=>{const n=used[p.id+"|"+f]||0;bars+=`<i class="${n>1?"clash":(n?"on":"")}" title="${esc(p.name)} ${f}"></i>`;}));
-    const wk=!isWeekend(date)?`<span class="wk">entre semana</span>`:"";
-    h+=`<section class="day ${past?"past":""} ${all.length?"":"free"}" data-drop="${date}">
-      <div class="dayhead"><div style="min-width:0;flex:1"><div class="dname">${flong(date)}${wk}</div>
-      <div class="dmeta">${all.length?`${homes.length} en casa · ${aways.length} fuera`:"Sin partidos · fecha libre"}${homes.length?` · ${Object.keys(used).length}/${total} franjas`:""}</div>
-      ${all.length?`<div class="dmeta">${(()=>{const ids=[...new Set(all.flatMap(m=>(m.coaches||[]).filter(Boolean)))];return ids.length?"Entrenadores: "+ids.map(id=>esc(coachById(id)?.name||"")).join(", "):"";})()}</div>`:""}
-      ${(()=>{const bs=S.coaches.flatMap(c=>busyOn(c,date).map(b=>esc(c.name)+" "+busyTxt(b)));return bs.length?`<div class="dmeta busyn">${bs.join(" · ")}</div>`:"";})()}
-      ${homes.length?`<div class="usage">${bars}</div>`:""}</div>
-      <div class="dflags">${past?"":(c?`<span class="flag crit">${c} choque${c>1?"s":""}</span>`:"")+(w?`<span class="flag warn">${w} aviso${w>1?"s":""}</span>`:"")+(all.length&&!c&&!w?`<span class="flag ok">OK</span>`:"")}</div></div>`;
-    const hs=ms.filter(m=>m.home).sort(sortM),as=ms.filter(m=>!m.home).sort(sortM);
-    if(hs.length) h+=`<div class="grp"><h3>En casa</h3>${hs.map(m=>mRow(m,A)).join("")}</div>`;
-    if(as.length) h+=`<div class="grp"><h3>Fuera</h3>${as.map(m=>mRow(m,A)).join("")}</div>`;
-    const sus=S.matches.filter(m=>m.date===date&&isSusp(m)&&teamsOf(m).some(t=>ui.teams.has(t)));
-    if(sus.length) h+=`<div class="grp susp"><h3>En suspenso</h3>${sus.map(m=>`<div class="m susp"><span class="bar" style="background:var(${TM[m.team].col})"></span><span style="min-width:0"><span class="tm">${esc(teamLabel(m))}<span class="tag mv">en suspenso</span></span><span class="rv">${m.home?"vs ":"en "}${esc(m.rival)}</span><span class="sub">Pendiente del nuevo calendario</span></span><span></span></div>`).join("")}</div>`;
-    if(all.length&&!ms.length) h+=`<div class="empty">Ningún partido de los equipos filtrados.</div>`;
-    if(!all.length) h+=`<div class="empty">Arrastra aquí un partido para probar esta fecha.</div>`;
-    if(!past&&(c||w)) h+=propHTML(date,false);
-    const wcd=!past&&isWeekend(date)?all.filter(isWkCand):[];
-    if(wcd.length) h+=`<div class="props wk"><h3>Para pasar a entre semana</h3>${wcd.map(m=>wkRow(m,false)).join("")}</div>`;
-    if(homes.some(m=>!m.pista||!m.hora)&&!past) h+=`<div class="dayfoot"><button class="btn small" data-auto="${date}">Repartir pistas y horas</button></div>`;
-    h+=`</section>`;
-  });
-  h+=`</div><p class="hint" style="margin-top:14px">Arrastra un partido a otra fecha, o tócalo para cambiar fecha (también entre semana), pista y hora.</p>`;
-  return h;
-}
-function sortM(a,b){return (a.hora||"99").localeCompare(b.hora||"99")||ORDER.indexOf(a.team)-ORDER.indexOf(b.team);}
-function mRow(m,A){
-  const t=TM[m.team],w=worst(A.byMatch[m.id]),past=m.date<TODAY;
-  const cs=m.ajeno?`<span class="cn">Partido de otros equipos · ocupa pista</span>`:teamsOf(m).map((tk,i)=>{const c=coachById((m.coaches||[])[i]);if(!c)return `<span class="cn none">Sin entrenador</span>`;const tl=tier(c,tk);return `<span class="cn ${c.emerg||tl===3?"em":tl===2?"lr":""}">${esc(c.name)}${m.coachLock?" 🔒":""}</span>`;}).join(" · ");
-  const slot=m.home?(m.pista||m.hora?`<span class="slot">${m.hora?esc(m.hora)+"–"+endOf(m):"--:--"}${m.pista?" · "+esc(pistaName(m.pista)):""}</span>`:`<span class="slot none">Falta pista y hora</span>`):(m.hora?`<span class="slot">${esc(m.hora)}</span>`:"");
-  return `<button class="m ${m.home?"":"away"} ${m.ajeno?"ajeno":""}" data-open="${m.id}" ${past?"":`draggable="true" data-drag="${m.id}"`}>
-    <span class="bar" style="background:${m.team2?`linear-gradient(var(${t.col}) 50%,var(${TM[m.team2].col}) 50%)`:`var(${t.col})`}"></span>
-    <span style="min-width:0"><span class="tm">${esc(teamLabel(m))}${changed(m)?`<span class="tag mv est-${m.estado||"propuesto"}">${ESTL[m.estado||"propuesto"]}</span>`:""}${sedeCh(m)?`<span class="tag mv">sede cambiada</span>`:""}${m.duda?`<span class="tag est-pendiente">sin confirmar</span>`:""}${m.sedeDuda?`<span class="tag est-pendiente">sede por confirmar</span>`:""}${m.custom?`<span class="tag mv">añadido</span>`:""}</span>
-    <span class="rv">${m.ajeno?esc(m.rival):m.sede?"vs "+esc(m.rival)+" · en "+esc(m.sede):(m.home?"vs ":"en ")+esc(m.rival)}</span>
-    <span class="sub">${cs}</span>${m.note?`<span class="sub mnote">📝 ${esc(m.note.length>70?m.note.slice(0,68)+"…":m.note)}</span>`:""}</span>
-    <span class="side">${slot}${w&&!past?`<span class="ic ${w}" aria-label="${w==="crit"?"choque":w==="warn"?"aviso":"nota"}">${w==="info"?"i":"!"}</span>`:""}</span></button>`;
-}
-
-function renderIssues(A){
-  const lv={crit:"Choques",warn:"Avisos",info:"Notas",todo:"Pendiente de asignar"};
-  let h="";
-  const probDays=[...new Set(A.issues.filter(i=>i.lvl==="crit"||i.lvl==="warn").map(i=>i.date))].sort();
-  const ph=probDays.map(d=>propHTML(d,true)).join("");
-  const wc=wkCands();
-  h+=`<section class="panel"><h2>Para pasar a entre semana <span class="count">${wc.length}</span></h2><p class="lead">Partidos contra Río Sella (a 15 minutos) y derbis del club que siguen en fin de semana. Se jugarán entre semana. Cada botón es un día de la semana anterior o siguiente en que el equipo no juega y queda entrenador.</p>${wc.length?`<div class="actions" style="justify-content:flex-start;margin-bottom:8px"><button class="btn primary" data-allwk="1">Pasarlos todos a entre semana</button></div>`:""}${wc.length?`<div class="props wk">${wc.map(m=>wkRow(m,true)).join("")}</div>`:`<p class="hint">Ya no queda ninguno en fin de semana.</p>`}</section>`;
-  h+=`<section class="panel"><h2>Propuestas de cambio de fecha</h2><p class="lead">Para cada día con choques o avisos, partidos que podrías mover a otro sábado para que cuadren pistas y entrenadores. Cada cambio hay que acordarlo con el rival y la federación.</p>${ph||`<p class="hint">${probDays.length?"No hay ningún sábado que mejore los días con problemas; prueba entre semana.":"No hay días con problemas."}</p>`}</section>`;
-  ["crit","warn","info","todo"].forEach(l=>{
-    const list=A.issues.filter(i=>i.lvl===l).sort((a,b)=>a.date.localeCompare(b.date));
-    const desc={crit:"Hay que resolverlos: partidos sin entrenador libre, dos partidos en la misma pista y hora, o un entrenador en dos sitios.",warn:"Conviene revisarlos: hace falta tirar de Elena o Ari, o un equipo juega dos veces el mismo día.",info:"Entrenadores fuera de su preferencia y partidos que se acordó intentar jugar entre semana.",todo:"Partidos en casa sin pista o sin hora."}[l];
-    h+=`<section class="panel"><h2>${lv[l]} <span class="count ${l==="crit"?"crit":l==="warn"?"warn":""}">${list.length}</span></h2><p class="lead">${desc}</p>`;
-    if(!list.length) h+=`<p class="hint">Nada en esta lista.</p>`;
-    // de-dup por texto+fecha
-    const seen=new Set();
-    list.forEach(i=>{const k=i.date+i.text;if(seen.has(k))return;seen.add(k);
-      h+=`<div class="issue"><span class="ic ${l==="todo"?"warn":l}">${l==="info"?"i":"!"}</span><div><div class="what">${esc(i.text)}</div><div class="when">${flong(i.date)}</div></div><button class="btn small" data-open="${i.ids[0]}">Abrir</button></div>`;});
-    h+=`</section>`;
-  });
-  return h;
-}
-
-function renderChanges(){
-  const mv=AM().filter(changed).sort((a,b)=>a.orig.localeCompare(b.orig));
-  const pend=mv.filter(m=>m.estado!=="comunicado").length;
-  let h=`<section class="panel"><h2>Partidos cambiados ${mv.length?`<span class="count ${pend?"warn":""}">${pend} pendiente${pend===1?"":"s"}</span>`:""}</h2><p class="lead">Partidos con fecha o sede distinta del calendario de la FVBPA. Marca cada cambio cuando el rival lo acepte, mientras esté pendiente de la federación y cuando la FVBPA lo confirme.</p>`;
-  if(!mv.length) h+=`<p class="hint">Todavía no has movido ningún partido.</p>`;
-  else{
-    h+=`<div class="tscroll"><table><thead><tr><th>Equipo</th><th>Partido</th><th>Fecha FVBPA</th><th>Nueva fecha</th><th>Sede</th><th>Estado</th><th></th></tr></thead><tbody>`;
-    mv.forEach(m=>{h+=`<tr><td><span class="dot" style="display:inline-block;margin-right:6px;background:var(${TM[m.team].col})"></span>${esc(teamLabel(m))}</td><td>${m.home?"CV Cangas – "+esc(m.rival):esc(m.rival)+" – CV Cangas"}</td><td>${fshort(m.orig)}</td><td>${m.date!==m.orig?`<b>${fshort(m.date)}</b>`:"Igual"}${m.hora?" · "+esc(m.hora):""}</td><td>${sedeCh(m)?`<b>${m.home?"En casa":"Fuera"}</b> (antes ${m.origHome?"en casa":"fuera"})`:(m.home?"En casa":"Fuera")}</td><td><select id="es-${m.id}" data-estado="${m.id}" aria-label="Estado del cambio" class="estsel">${Object.entries(ESTL).map(([k,v])=>`<option value="${k}" ${m.estado===k?"selected":""}>${v}</option>`).join("")}</select></td><td><button class="btn small" data-restore="${m.id}">Deshacer</button></td></tr>`;});
-    h+=`</tbody></table></div><div class="actions" style="justify-content:flex-start;margin-top:12px"><button class="btn" id="copy-chg">Copiar resumen de cambios</button></div>`;
-  }
-  h+=`</section><section class="panel"><h2>Volver al calendario federativo</h2><p class="lead">Devuelve todos los partidos a su fecha original y quita pistas y horas. Las pistas y los entrenadores se mantienen.</p>`;
-  h+=ui.confirmReset?`<div class="confirm">¿Seguro? Se pierden todos los movimientos de esta versión. <button class="btn small danger" id="reset-yes">Sí, restaurar</button><button class="btn small" id="reset-no">Cancelar</button></div>`:`<button class="btn danger" id="reset">Restaurar calendario</button>`;
-  h+=`</section>`;
-  return h;
-}
-
-function slug(n){return String(n).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");}
-function teamOfCoach(m,cid){const i=(m.coaches||[]).indexOf(cid);return teamsOf(m)[i]||m.team;}
-function whereText(m){return (m.sede?"en "+m.sede+(m.sedeDuda?" (sede por confirmar)":"")+" · ":(m.sedeDuda?"sede por confirmar · ":""))+(m.home?(m.pista?pistaName(m.pista)+(m.hora?" · calienta "+fromMin(span(m)[0]):""):"pista por asignar"):(m.hora?"salida "+salida(m)+" ("+travel(m)+" min)":"desplazamiento "+travel(m)+" min"));}
-function myMatches(cid){return AM().filter(m=>m.date>=TODAY&&(m.coaches||[]).includes(cid)).sort((a,b)=>a.date.localeCompare(b.date)||(a.hora||"99").localeCompare(b.hora||"99"));}
-function renderMine(){
-  const c=coachById(ui.me);
-  let h=`<section class="panel"><h2>Enlaces para familias</h2><p class="lead">Un enlace por categoría, solo con sus partidos, que las familias abren sin cuenta. Cuando hagas cambios: pulsa «Descargar web de familias» y sube el archivo <b>index.html</b> a tu repositorio de GitHub (Add file → Upload files, sustituyendo el anterior). En un minuto los enlaces muestran lo nuevo.</p>
-    <div class="field"><label for="f-fambase">Dirección de la web de familias</label><input id="f-fambase" value="${esc(S.famBase||"")}" placeholder="https://danielvega80.github.io/partidos/"></div>
-    <p><button class="btn primary" id="fam-dl">Descargar web de familias</button></p>
-    <div class="tscroll"><table><tbody>${TEAMS.map(t=>`<tr><td><span class="dot" style="display:inline-block;margin-right:6px;background:var(${t.col})"></span>${t.n}</td><td class="lnk">${esc(famLink(t.k))}</td><td><button class="btn small" data-flink="${t.k}">Copiar</button> <a class="btn small" href="#${famSlug(t.k)}">Ver</a></td></tr>`).join("")}</tbody></table></div></section>`;
-  if(!ui.ro)h+=`<section class="panel"><h2>Enlace para entrenadores</h2><p class="lead">Ven el planificador completo, igual que tú, pero sin poder guardar cambios. Pásalo solo a los entrenadores: las familias con su enlace de categoría no llegan a esta vista. El enlace con nombre abre directamente sus partidos.</p>
-    <div class="tscroll"><table><tbody><tr><td><b>Todos</b></td><td class="lnk">${esc(staffLink())}</td><td><button class="btn small" data-slink="">Copiar</button></td></tr>${S.coaches.map(x=>`<tr><td>${esc(x.name)}</td><td class="lnk">${esc(staffLink(x.id))}</td><td><button class="btn small" data-slink="${x.id}">Copiar</button></td></tr>`).join("")}</tbody></table></div></section>`;
-  h+=`<section class="panel"><h2>Mis partidos</h2><p class="lead">Cada entrenador ve aquí solo sus partidos y marca los días que no puede.</p><div class="filters">${S.coaches.map(x=>`<button class="chip" aria-pressed="${x.id===ui.me}" data-me="${x.id}">${esc(x.name)}</button>`).join("")}</div></section>`;
-  if(!c)return h;
-  const mine=myMatches(c.id);
-  h+=`<section class="panel"><h2>${esc(c.name)} <span class="count">${mine.length} partido${mine.length===1?"":"s"}</span></h2>`;
-  if(!mine.length)h+=`<p class="hint">No tiene partidos asignados ahora mismo.</p>`;
-  else h+=`<div class="tscroll"><table><thead><tr><th>Fecha</th><th>Equipo</th><th>Partido</th><th>Hora</th><th>Dónde</th></tr></thead><tbody>${mine.map(m=>`<tr><td>${fshort(m.date)}</td><td>${esc(TM[teamOfCoach(m,c.id)].n)}</td><td>${m.home?"vs ":"en "}${esc(m.rival)}</td><td>${m.hora?esc(m.hora):"—"}</td><td>${esc(whereText(m))}</td></tr>`).join("")}</tbody></table></div>
-    <div class="actions" style="justify-content:flex-start;margin-top:12px"><button class="btn" id="me-copy">Copiar para WhatsApp</button>${DL?`<button class="btn" id="me-csv">Descargar para Google Calendar</button>`:""}</div>`;
-  h+=`</section>`;
-  const sats=boardDates().filter(d=>d>=TODAY&&pd(d).getDay()===6);
-  const own=new Set([...(c.off||[]),...(DBOFF[c.id]||[])]);
-  h+=`<section class="panel"><h2>Días que no puede</h2><p class="lead">${DB?"Toca un sábado para marcarlo o desmarcarlo. Se guarda al momento y el reparto lo tiene en cuenta.":"Toca un sábado para marcarlo o desmarcarlo, y guarda la versión."}</p><div class="quick">${sats.map(d=>`<button data-meoff="${d}" class="${own.has(d)?"no":""}" aria-pressed="${own.has(d)}">${fshort(d)}</button>`).join("")}</div>
-    ${(c.busy||[]).length?`<p class="hint">Por horas: ${c.busy.map(b=>fshort(b.d)+" "+busyTxt(b)).join(" · ")}</p>`:""}
-    ${c.alt&&c.alt.on&&c.alt.start?`<p class="hint">Tampoco cuenta los fines de semana que trabaja (alternos desde el ${fshort(c.alt.start)}).</p>`:""}</section>`;
-  return h;}
-function resRows(){const out=[];[...new Set(AM().filter(m=>m.home&&m.date>=TODAY).map(m=>m.date))].sort().forEach(d=>{AM().filter(m=>m.home&&m.date===d).sort((a,b)=>(pistaName(a.pista)||"zz").localeCompare(pistaName(b.pista)||"zz")||(a.hora||"99").localeCompare(b.hora||"99")).forEach(m=>out.push(m));});return out;}
-function renderRes(){
-  const rows=resRows();let h=`<section class="panel"><h2>Reservas de pista</h2><p class="lead">Lo que hay que reservar cada día de partido en casa. La reserva empieza con el calentamiento y acaba a la hora máxima prevista, por si el partido se alarga.</p>
-    <div class="actions" style="justify-content:flex-start;margin-bottom:8px"><button class="btn" id="res-copy">Copiar todo</button>${DL?`<button class="btn" id="res-csv">Descargar hoja (CSV)</button>`:""}<button class="btn" data-autoall="1">Repartir pistas de toda la temporada</button></div>`;
-  if(!rows.length)h+=`<p class="hint">No quedan partidos en casa.</p>`;
-  let last="";rows.forEach(m=>{if(m.date!==last){if(last)h+=`</tbody></table></div>`;last=m.date;h+=`<h3 class="resd">${flong(m.date)}</h3><div class="tscroll"><table><thead><tr><th>Pista</th><th>Reserva</th><th>Inicio</th><th>Equipo</th><th>Rival</th></tr></thead><tbody>`;}
-    h+=`<tr><td>${m.pista?esc(pistaName(m.pista)):`<span class="slot none">Sin pista</span>`}</td><td>${m.hora?fromMin(span(m)[0])+"–"+endOf(m,true):"—"}</td><td>${m.hora?esc(m.hora):"—"}</td><td>${esc(teamLabel(m))}</td><td>${esc(m.rival)}</td></tr>`;});
-  if(last)h+=`</tbody></table></div>`;
-  return h+`</section>`;}
-function renderCfg(){
-  let h=`<div class="cfg"><section class="panel"><h2>Pistas</h2><p class="lead">Marca qué categorías caben en cada pista. Sin ninguna marcada, vale para todas. Las excepcionales solo se usan cuando no queda otra.</p>`;
-  S.pistas.forEach(p=>{h+=`<div class="coach"><div class="row"><input type="text" id="pn-${p.id}" data-pname="${p.id}" value="${esc(p.name)}" aria-label="Nombre de pista" style="flex:1;font-weight:600">${S.pistas.length>1?`<button class="btn small danger" data-pdel="${p.id}">Quitar</button>`:""}</div>
-    <div class="teams">${TEAMS.map(t=>`<label><input type="checkbox" id="pt-${p.id}-${t.k}" data-pteam="${p.id}|${t.k}" ${p.teams.includes(t.k)?"checked":""}><span class="dot" style="background:var(${t.col})"></span>${t.n}</label>`).join("")}</div>
-    <div class="cop"><span class="hint">${p.teams.length?"Solo las categorías marcadas":"Todas las categorías"}</span><label><input type="checkbox" id="px-${p.id}" data-pexc="${p.id}" ${p.exc?"checked":""}> Solo excepcionalmente</label></div></div>`;});
-  h+=`<button class="btn small" id="padd">Añadir pista</button>
-    <h2 style="margin-top:18px">Calendarios en suspenso</h2><p class="lead">Los partidos del equipo se quedan en el calendario, en gris, pero no ocupan pista ni entrenador hasta que lo reactives.</p>
-    <div class="teams">${TEAMS.map(t=>`<label><input type="checkbox" id="su-${t.k}" data-susp="${t.k}" ${S.susp.includes(t.k)?"checked":""}><span class="dot" style="background:var(${t.col})"></span>${t.n}</label>`).join("")}</div>
-    <h2 style="margin-top:18px">Franjas horarias</h2><p class="lead">Horas habituales de inicio de los partidos en casa.</p><div class="row">`;
-  S.franjas.forEach(f=>{h+=`<span class="pill">${esc(f)}<button data-fdel="${esc(f)}" aria-label="Quitar ${esc(f)}">×</button></span>`;});
-  h+=`</div><div class="row"><input type="time" id="fnew" aria-label="Nueva franja"><button class="btn small" id="fadd">Añadir franja</button></div>
-    <h2 style="margin-top:18px">Horas entre semana</h2><p class="lead">Para los partidos que se pasen a un día laborable (derbis, Río Sella).</p><div class="row">${S.franjasSemana.map(f=>`<span class="pill">${esc(f)}<button data-fsdel="${esc(f)}" aria-label="Quitar ${esc(f)}">×</button></span>`).join("")}</div>
-    <div class="row"><input type="time" id="fsnew" aria-label="Nueva hora entre semana"><button class="btn small" id="fsadd">Añadir hora</button></div>
-    <p class="hint">Son las horas que propone la app. En cada partido puedes escribir cualquier otra hora a mano.</p>
-    <div class="cop"><label for="maxh">Ningún partido de fin de semana empieza más tarde de las</label><input type="time" id="maxh" data-maxh="1" value="${esc(S.maxHora)}" class="num" style="width:auto"></div>
-    <h2 style="margin-top:18px">Tiempos de juego</h2><p class="lead">La hora de cada partido es la de inicio. Antes se calienta en la misma pista: más si es el primer partido de esa pista, menos si va detrás de otro. Si un partido puede pisar al siguiente al alargarse, sale como aviso.</p>
-    <div class="tscroll"><table><thead><tr><th>Categoría</th><th>Dura</th><th>Si se alarga</th><th>Calienta 1.º</th><th>Calienta después</th></tr></thead><tbody>
-    ${[["mini","Minibenjamín"],["peq","Benjamín y alevines"],["gra","Infantil y cadetes"]].map(([k,n])=>`<tr><td>${n}</td>${["d","max","w1","w2"].map(f=>`<td><input type="number" min="5" max="240" step="5" id="tt-${k}-${f}" data-tt="${k}|${f}" value="${S.t[k][f]}" aria-label="${n} ${f}" style="width:64px;border:1px solid var(--line);background:var(--surface);border-radius:7px;padding:5px 6px"> min</td>`).join("")}</tr>`).join("")}
-    </tbody></table></div></section>`;
-  const venues={};S.matches.filter(m=>!m.home).forEach(m=>{const k=vk(m);if(!venues[k])venues[k]=(m.sede||m.rival).replace(/\s+(?:[A-Z]|9X18)$/,"");});
-  h+=`<section class="panel"><h2>Desplazamientos</h2><p class="lead">Minutos de viaje desde Cangas hasta cada rival. Con la hora del partido fuera, la app calcula la hora de salida y si al entrenador le da tiempo a otro partido ese día. Puedes ajustar cualquiera.</p>
-    <div class="cop"><span class="hint">Llegar antes del partido:</span><label for="lleg-peq">Benjamín y alevines</label><input type="number" id="lleg-peq" data-lleg="peq" value="${S.llegada.peq}" min="0" max="120" step="5" class="num"> min<label for="lleg-gra">Infantil y cadetes</label><input type="number" id="lleg-gra" data-lleg="gra" value="${S.llegada.gra}" min="0" max="120" step="5" class="num"> min</div>
-    <div class="tscroll"><table><thead><tr><th>Rival</th><th>Viaje</th></tr></thead><tbody>${Object.entries(venues).sort((a,b)=>a[1].localeCompare(b[1])).map(([k,n])=>`<tr><td>${esc(n)}</td><td><input type="number" min="0" max="300" step="5" id="vj-${slug(k)}" data-viaje="${esc(k)}" value="${S.viaje[k]!=null?S.viaje[k]:guessTravel(k)}" class="num" aria-label="Minutos a ${esc(n)}"> min</td></tr>`).join("")}</tbody></table></div>
-    <div class="cop" style="margin-top:12px"><label><input type="checkbox" id="bal" data-bal="1" ${S.balance?"checked":""}> Repartir la carga entre entrenadores a lo largo de la temporada</label></div></section>`;
-  const fut={};AM().forEach(m=>{if(m.date<TODAY)return;(m.coaches||[]).forEach(id=>id&&(fut[id]=(fut[id]||0)+1));});
-  h+=`<section class="panel"><h2>Entrenadores</h2><p class="lead">Marca los equipos preferentes de cada uno, si puede ir con otros y los días que no puede. La app reparte los partidos con estas reglas y lo recalcula cada vez que mueves algo.</p>`;
-  S.coaches.forEach(c=>{
-    h+=`<div class="coach"><div class="row"><input type="text" id="cn-${c.id}" data-cname="${c.id}" value="${esc(c.name)}" aria-label="Nombre" style="flex:1;font-weight:600"><span class="load">${fut[c.id]||0} partidos · ${new Set(AM().filter(m=>m.date>=TODAY&&(m.coaches||[]).includes(c.id)).map(m=>m.date)).size} días</span><button class="btn small danger" data-cdel="${c.id}">Quitar</button></div>
-      <span class="hint">Preferentes:</span>
-      <div class="teams">${TEAMS.map(t=>`<label><input type="checkbox" id="ct-${c.id}-${t.k}" data-cteam="${c.id}|${t.k}" ${c.pref.includes(t.k)?"checked":""}><span class="dot" style="background:var(${t.col})"></span>${t.n}</label>`).join("")}</div>
-      <span class="hint">Solo de emergencia con (después de Elena y Ari):</span>
-      <div class="teams">${TEAMS.map(t=>`<label><input type="checkbox" id="cx-${c.id}-${t.k}" data-cem="${c.id}|${t.k}" ${c.emT.includes(t.k)?"checked":""}><span class="dot" style="background:var(${t.col})"></span>${t.n}</label>`).join("")}</div>
-      <div class="cop"><label for="co-${c.id}">Otros equipos</label><select id="co-${c.id}" data-cother="${c.id}"><option value="si" ${c.otros==="si"?"selected":""}>Puede ir con cualquiera</option><option value="ultimo" ${c.otros==="ultimo"?"selected":""}>Solo en último caso</option><option value="no" ${c.otros==="no"?"selected":""}>No</option></select>
-      <label><input type="checkbox" id="ce-${c.id}" data-cemerg="${c.id}" ${c.emerg?"checked":""}> Solo de emergencia (vive fuera)</label></div>
-      <div class="cop"><label><input type="checkbox" id="ca-${c.id}" data-calt="${c.id}" ${c.alt.on?"checked":""}> Trabaja fines de semana alternos</label>
-      ${c.alt.on?`<label for="cas-${c.id}">Primer sábado que trabaja</label><input type="date" id="cas-${c.id}" data-calts="${c.id}" value="${esc(c.alt.start)}" style="border:1px solid var(--line);background:var(--surface);border-radius:7px;padding:5px 8px">${c.alt.start?"":`<span class="hint">Sin fecha todavía: de momento cuenta como disponible.</span>`}`:""}</div>
-      <div class="cop"><span class="hint">Entre semana puede:</span>${[1,2,3,4,5].map(n=>`<label><input type="checkbox" id="cw-${c.id}-${n}" data-cwk="${c.id}|${n}" ${c.wk.includes(n)?"checked":""}> ${["L","M","X","J","V"][n-1]}</label>`).join("")}</div>
-      ${(DBOFF[c.id]||[]).length?`<div class="row"><span class="hint">Marcados por ${esc(c.name)}:</span><div class="offs">${DBOFF[c.id].slice().sort().map(d=>`<span class="off">${fshort(d)}</span>`).join("")}</div></div>`:""}
-      <div class="row"><span class="hint">Por horas:</span><div class="offs">${(c.busy||[]).slice().sort((a,b)=>a.d.localeCompare(b.d)).map((b,i)=>`<span class="off">${fshort(b.d)} · ${busyTxt(b)}<button data-busydel="${c.id}|${b.d}|${b.desde}" aria-label="Quitar">×</button></span>`).join("")||`<span class="hint">ninguna</span>`}</div></div>
-      <div class="row"><input type="date" id="bd-${c.id}" aria-label="Día"><select id="bt-${c.id}" aria-label="Tipo"><option value="hasta">trabaja hasta</option><option value="desde">no está desde</option></select><input type="time" id="bh-${c.id}" aria-label="Hora"><button class="btn small" data-busyadd="${c.id}">Añadir</button></div>
-      <div class="row" style="margin-bottom:0"><span class="hint">No disponible:</span><div class="offs">${c.off.slice().sort().map(d=>`<span class="off">${fshort(d)}<button data-offdel="${c.id}|${d}" aria-label="Quitar">×</button></span>`).join("")||`<span class="hint">ningún día</span>`}</div></div>
-      <div class="row" style="margin-top:6px"><input type="date" id="off-${c.id}" aria-label="Día no disponible"><button class="btn small" data-offadd="${c.id}">Añadir día</button></div></div>`;});
-  h+=`<div class="row" style="margin-top:14px"><input type="text" id="cnew" placeholder="Nombre del entrenador" style="flex:1"><button class="btn small" id="cadd">Añadir</button></div></section></div>`;
-  return h;
-}
-
-function renderSheet(A){
-  const m=S.matches.find(x=>x.id===ui.sheet.id); if(!m) return "";
-  const iss=(A.byMatch[m.id]||[]).filter(i=>i.lvl!=="todo");
-  const cands=suggestDates(m);
-  let h=`<div class="sheet-bg" id="sheet-bg"><div class="sheet" role="dialog" aria-modal="true" aria-label="Editar partido">
-    <h2>${esc(teamLabel(m))}</h2><div class="sub">${m.sede?"Contra "+esc(m.rival)+", en "+esc(m.sede):(m.home?"En casa contra ":"Fuera, en ")+esc(m.rival)} · ${esc(TM[m.team].c)}<br>${m.custom?"Partido añadido a mano":"Fecha FVBPA: "+flong(m.orig)+" · "+(m.origHome?"en casa":"fuera")}${m.date!==m.orig?` · ahora ${flong(m.date)}`:""}${sedeCh(m)?` · ahora ${m.home?"en casa":"fuera"}`:""}</div>`;
-  if(iss.length) h+=`<div class="issues">${iss.map(i=>`<div class="note ${i.lvl}">${esc(i.text)}</div>`).join("")}</div>`;
-  if(m.custom)h+=`<div class="field"><label for="f-team">Equipo</label><select id="f-team">${TEAMS.map(t=>`<option value="${t.k}" ${m.team===t.k?"selected":""}>${t.n}</option>`).join("")}</select></div>
-    <div class="field"><label for="f-rival">Rival</label><input type="text" id="f-rival" value="${esc(m.rival)}"></div>
-    <div class="field"><label for="f-home">Dónde</label><select id="f-home"><option value="1" ${m.home?"selected":""}>En casa</option><option value="0" ${m.home?"":"selected"}>Fuera</option></select></div>`;
-  if(!m.custom){const vu=vueltaOf(m);if(ui.sheet.sw===undefined)ui.sheet.sw=true;
-    h+=`<div class="field"><label for="f-sede">Sede</label><select id="f-sede"><option value="1" ${m.home?"selected":""}>En casa (Cangas)</option><option value="0" ${m.home?"":"selected"}>En la sede del rival (${esc(m.rival)})</option></select>
-    ${vu?`<div class="cop"><label><input type="checkbox" id="f-sw" ${ui.sheet.sw?"checked":""}> Al cambiar la sede, invertir también la del otro partido (${fshort(vu.date)}, ahora ${vu.home?"en casa":"fuera"})</label></div>${vu.home===m.home?`<span class="hint">Ojo: este partido y el otro contra ${esc(m.rival)} están los dos ${m.home?"en casa":"fuera"}.</span>`:""}`:""}</div>`;}
-  h+=`<div class="field"><label for="f-date">Fecha</label><input type="date" id="f-date" value="${m.date}"></div>`;
-  if(isWkCand(m)&&isWeekend(m.date)){const ops=weekdayOptions(m);h+=`<div class="field"><label>Días entre semana</label><div class="quick">${ops.map(o=>`<button data-qdate="${o.d}">${fshort(o.d)}${o.who.length?" · "+esc(o.who.join(" y ")):""}</button>`).join("")||`<span class="hint">Ningún día libre la semana anterior ni la siguiente.</span>`}</div></div>`;}
-  if(cands.length) h+=`<div class="field"><label>Mejores sábados para moverlo</label><div class="quick">${cands.map(o=>`<button data-qdate="${o.d}" title="${o.emerg?"Haría falta Elena o Ari":"Cubierto con el equipo habitual"}">${fshort(o.d)}${o.emerg?" ⚠":""}</button>`).join("")}</div><span class="hint">Sábados donde el equipo no juega y queda entrenador para todos los partidos del día. ⚠ = haría falta Elena o Ari.</span></div>`;
-  if(m.home){
-    h+=`<div class="field"><label for="f-pista">Pista</label><select id="f-pista"><option value="">Sin asignar</option>${S.pistas.map(p=>{const ok=pistaOk(p,m);return `<option value="${p.id}" ${m.pista===p.id?"selected":""} ${ok||m.pista===p.id?"":"disabled"}>${esc(p.name)}${!ok?" (no apta)":p.exc?" (excepcional)":""}</option>`;}).join("")}</select></div>`;
-    const free=freeSlots(m);
-    h+=`<div class="field"><label>Hora</label><div class="quick">${franjasFor(m.date).map(f=>`<button data-qhora="${f}" class="${m.hora===f?"sel":""}" title="${free[f]?"Libre":"Ocupada o choque"}">${f}${free[f]?"":" ·"}</button>`).join("")}</div>
-      <label for="f-hora" class="hint" style="margin-top:6px">Otra hora (escríbela a mano)</label><input type="time" id="f-hora" value="${esc(m.hora)}" ${isWeekend(m.date)?`max="${esc(S.maxHora)}"`:""}>${m.hora?`<span class="hint">Calienta desde las ${fromMin(span(m)[0])} (${warmOf(m)} min${isFirst(m,m.hora)?", primer partido de la pista":""}) · fin previsto ${endOf(m)}, hasta ${endOf(m,true)} si se alarga</span>`:""}<span class="hint">Las franjas con punto no tienen pista apta libre o chocan con el entrenador.</span></div>`;
-  } else {
-    h+=`<div class="field"><label for="f-hora">Hora del partido</label><input type="time" id="f-hora" value="${esc(m.hora)}" ${isWeekend(m.date)?`max="${esc(S.maxHora)}"`:""}><span class="hint">${m.hora?`Salida desde Cangas a las ${salida(m)} (${travel(m)} min de viaje y ${lleg(m)} min antes). Vuelta hacia las ${fromMin(cspan(m)[1])}.`:`Con la hora, la app calcula la salida (${travel(m)} min de viaje) y si el entrenador llega a otro partido ese día.`}</span></div>`;
-  }
-  const L=dayCoachLoad(m.date,m);
-  teamsOf(m).forEach((tk,i)=>{
-    const curId=(m.coaches||[])[i];const cc=coachById(curId);
-    const opts=S.coaches.slice().sort((a,b)=>cost(a,tk)-cost(b,tk)).map(c=>{const why=conflictWhy(c,m,m.date,L[c.id]||[]);return `<option value="${c.id}" ${m.coachLock&&curId===c.id?"selected":""}>${esc(c.name)} · ${tierLabel(c,tk)}${why?" · "+why:""}</option>`;}).join("");
-    h+=`<div class="field"><label for="f-coach-${i}">Entrenador${m.team2?" "+TM[tk].n:""}</label><select id="f-coach-${i}" data-coach="${i}"><option value="auto" ${m.coachLock?"":"selected"}>Automático${!m.coachLock?(cc?": "+esc(cc.name)+" ("+tierLabel(cc,tk)+")":": nadie libre"):""}</option>${opts}</select></div>`;});
-  const same=AM().filter(x=>x!==m&&x.date===m.date&&teamsOf(x).some(t=>teamsOf(m).includes(t)));
-  if(same.length)h+=`<div class="field"><label>Mismo día</label><div class="cop"><label><input type="checkbox" id="f-doble" ${m.doble?"checked":""}> Acordado: ${esc(TM[m.team].n)} juega ${same.length+1} partidos seguidos este día</label></div><span class="hint">También: ${same.map(x=>(x.home?"vs ":"en ")+esc(x.rival)+(x.hora?" a las "+esc(x.hora):"")).join(", ")}. Marcado, deja de salir como aviso.</span></div>`;
-  h+=`<div class="field"><label>Confirmación</label><div class="cop"><label><input type="checkbox" id="f-duda" ${m.duda?"checked":""}> Sin confirmar que se juegue (obras, aplazamiento…)</label><label><input type="checkbox" id="f-sededuda" ${m.sedeDuda?"checked":""}> Sede por confirmar (la fecha sí está clara)</label></div></div>`;
-  h+=`<div class="field"><label for="f-note">Notas</label><textarea id="f-note" rows="2" placeholder="Acuerdo con el rival, desplazamiento…">${esc(m.note)}</textarea></div>
-    <div class="actions">${m.custom?`<button class="btn danger" data-delm="${m.id}">Eliminar partido</button>`:""}${m.date!==m.orig?`<button class="btn" data-restore="${m.id}">Volver a la fecha FVBPA</button>`:""}<button class="btn primary" id="sheet-close">Hecho</button></div></div></div>`;
-  return h;
-}
-function freeSlots(m){
-  const res={};const others=AM().filter(x=>x.date===m.date&&x.id!==m.id);
-  const cs=coachesFor(m);
-  franjasFor(m.date).forEach(f=>{
-    const pistasBusy=new Set(others.filter(x=>x.home&&x.pista&&overlap(x,m,f,true)).map(x=>x.pista));
-    const coachBusy=others.some(x=>x.home&&overlap(x,m,f)&&coachesFor(x).some(c=>cs.includes(c)));
-    res[f]=pistasFor(m).some(p=>!pistasBusy.has(p.id))&&!coachBusy;});
-  return res;
-}
-function suggestDates(m){
-  // sábados futuros donde el equipo no juega, cabe en pista y el reparto de entrenadores sigue completo
-  const out=[];const ts=teamsOf(m);
-  boardDates().forEach(d=>{
-    if(d<TODAY||pd(d).getDay()!==6||d===m.date) return;
-    const ms=AM().filter(x=>x.date===d&&x.id!==m.id);
-    if(ms.some(x=>teamsOf(x).some(t=>ts.includes(t)))) return;
-    if(m.home&&capPenalty(ms.concat([m]))>=1000) return;
-    const sim=ms.concat([m]).map(x=>({...x,date:d,coaches:(x.coaches||[]).slice()}));
-    const sc=solveDay(sim);
-    if(sc>=1000) return;
-    const emerg=sim.some(x=>x.coaches.some(id=>id&&coachById(id)?.emerg));
-    out.push({d,sc,emerg});});
-  return out.sort((a,b)=>a.sc-b.sc||Math.abs(pd(a.d)-pd(m.orig))-Math.abs(pd(b.d)-pd(m.orig))).slice(0,8).sort((a,b)=>a.d.localeCompare(b.d));
-}
-function autoAssign(date,quiet){
-  // búsqueda conjunta de hora y pista para todos los partidos en casa del día, eligiendo la combinación que mejor deja el reparto de entrenadores
-  const big=m=>teamsOf(m).some(t=>BIG.includes(t));
-  const dayAll=AM().filter(m=>m.date===date);
-  const todo=dayAll.filter(m=>m.home&&!(m.pista&&m.hora)).sort((a,b)=>(big(b)-big(a))||ORDER.indexOf(a.team)-ORDER.indexOf(b.team));
-  if(!todo.length)return quiet?{n:0,fail:0}:(toast("Ya tienen pista y hora"),undefined);
-  const FR=franjasFor(date);
-  const sim=dayAll.map(x=>({...x,coaches:(x.coaches||[]).slice()}));
-  const byId=Object.fromEntries(sim.map(x=>[x.id,x]));
-  const order=todo.map(m=>byId[m.id]);
-  const placed=()=>sim.filter(x=>x.home&&x.pista&&x.hora);
-  const cands=m=>{const out=[];for(const f of (m.hora?[m.hora]:FR)){const seenK=new Set();for(const p of pistasFor(m)){if(m.pista&&m.pista!==p.id)continue;
-      const others=placed().filter(x=>x!==m&&x.pista===p.id);const oh=m.hora,op=m.pista;m.hora=f;m.pista=p.id;
-      const bad=others.some(x=>overlap(x,m,null,true));m.hora=oh;m.pista=op;if(bad)continue;
-      const kk=(p.teams.join()||"all")+(p.exc?"x":"")+"|"+(others.length?"o":"e");if(seenK.has(kk))continue;seenK.add(kk);out.push([f,p]);}}return out;};
-  const blocked=m=>order.filter(x=>x!==m&&!(x.hora&&x.pista)&&!cands(x).length).length;
-  const evalSim=()=>{const tmp=sim.map(x=>({...x,coaches:(x.coaches||[]).slice()}));return solveDay(tmp);};
-  // dos pasadas: colocar cada partido en el hueco que mejor deja el reparto; luego repasar cada uno con los demás ya puestos
-  SIMPOOL=sim;
-  for(let pass=0;pass<2;pass++){
-    order.forEach(m=>{if(pass===1){m.hora=todo.find(x=>x.id===m.id).hora||"";m.pista=todo.find(x=>x.id===m.id).pista||"";}
-      let bestC=null;for(const [f,p] of cands(m)){m.hora=f;m.pista=p.id;let sc=(p.exc?40:0)+FR.indexOf(f)*0.01;if(bestC&&sc>=bestC.sc)continue;sc+=blocked(m)*1000;if(bestC&&sc>=bestC.sc)continue;sc+=evalSim();if(!bestC||sc<bestC.sc)bestC={sc,f,p:p.id};}
-      if(bestC){m.hora=bestC.f;m.pista=bestC.p;}else{m.hora=todo.find(x=>x.id===m.id).hora||"";m.pista=todo.find(x=>x.id===m.id).pista||"";}});}
-  SIMPOOL=null;
-  const best={set:order.map(x=>[x.id,x.hora,x.pista])};
-  let n=0,fail=0;
-  if(best)best.set.forEach(([id,h,p])=>{const m=S.matches.find(x=>x.id===id);if(h&&p){m.hora=h;m.pista=p;n++;}else fail++;});
-  else fail=todo.length;
-  if(quiet)return {n,fail};
-  persist();render();
-  toast(fail?`${n} asignados · ${fail} sin hueco libre`:`${n} partido${n===1?"":"s"} asignado${n===1?"":"s"}`);
-}
-function autoAll(){let n=0,fail=0;boardDates().forEach(d=>{if(d<TODAY)return;if(!AM().some(m=>m.date===d&&m.home))return;const r=autoAssign(d,true);n+=r.n;fail+=r.fail;});persist();render();toast(fail?`${n} partidos con pista y hora · ${fail} sin hueco`:`${n} partidos con pista y hora`);}
-function moveTo(id,date){const m=S.matches.find(x=>x.id===id);if(!m||!date||m.date===date)return;m.date=date;persist();render();toast(`${TM[m.team].n} movido al ${fshort(date)}`);}
-let tt;function toast(t){let el=document.querySelector(".toast");if(!el){el=document.createElement("div");el.className="toast";el.setAttribute("role","status");document.body.appendChild(el);}el.textContent=t;clearTimeout(tt);tt=setTimeout(()=>el.remove(),2400);}
-
-// ---------- eventos ----------
-app.addEventListener("click",e=>{
-  const b=e.target.closest("button,[data-open]");
-  if(e.target.id==="sheet-bg"){ui.sheet=null;render();return;}
-  if(!b) return;
-  const d=b.dataset;
-  if(d.tab){ui.tab=d.tab;ui.confirmReset=false;render();window.scrollTo(0,0);return;}
-  if(d.go){ui.tab=d.go;render();window.scrollTo(0,0);return;}
-  if(d.team){ui.teams.has(d.team)?ui.teams.delete(d.team):ui.teams.add(d.team);persistUI();render();return;}
-  if(d.open){ui.sheet={id:d.open,focus:true};render();return;}
-  if(d.auto){autoAssign(d.auto);return;}
-  if(d.autoall){autoAll();return;}
-  if(d.allwk){moveAllWk();return;}
-  if(d.me){ui.me=d.me;render();return;}
-  if(d.flink){copyText(famLink(d.flink),"Enlace copiado");return;}
-  if(b.id==="fam-dl"){saveFile("index.html",buildFamilySite(),true);return;}
-  if(d.slink!==undefined){copyText(staffLink(d.slink),"Enlace copiado");return;}
-  if(d.meoff){toggleOff(ui.me,d.meoff);return;}
-  if(d.delm){S.matches=S.matches.filter(x=>x.id!==d.delm);ui.sheet=null;persist();render();toast("Partido eliminado");return;}
-  if(d.fsdel){S.franjasSemana=S.franjasSemana.filter(f=>f!==d.fsdel);persist();render();return;}
-  if(d.move){const [id,to]=d.move.split("|");moveTo(id,to);return;}
-  if(d.qdate){const m=cur();m.date=d.qdate;persist();render();return;}
-  if(d.qhora){const m=cur();m.hora=m.hora===d.qhora?"":d.qhora;if(m.hora&&!m.pista){const busy=new Set(AM().filter(x=>x.date===m.date&&x.id!==m.id&&x.home&&x.pista&&overlap(x,m,null,true)).map(x=>x.pista));const p=pistasFor(m).find(p=>!busy.has(p.id));if(p)m.pista=p.id;}persist();render();return;}
-  if(d.restore){const m=S.matches.find(x=>x.id===d.restore);m.date=m.orig;if(typeof m.origHome==="boolean"&&m.home!==m.origHome){m.home=m.origHome;if(!m.home)m.pista="";}persist();render();toast("Vuelto al calendario FVBPA");return;}
-  if(d.swapv){const m=cur(),o=S.matches.find(x=>x.id===d.swapv);const a=m.home;m.home=o.home;o.home=a;[m,o].forEach(x=>{if(!x.home)x.pista="";});persist();render();toast("Sede intercambiada con la vuelta");return;}
-  if(b.id==="sheet-close"){ui.sheet=null;render();return;}
-  if(b.id==="save"){save();return;}
-  if(b.id==="reset"){ui.confirmReset=true;render();return;}
-  if(b.id==="reset-no"){ui.confirmReset=false;render();return;}
-  if(b.id==="reset-yes"){S.matches.forEach(m=>{m.date=m.orig;if(typeof m.origHome==="boolean")m.home=m.origHome;m.pista="";m.hora="";m.coachLock=false;});ui.confirmReset=false;persist();render();toast("Calendario restaurado");return;}
-  if(b.id==="copy-chg"){copyChanges();return;}
-  if(b.id==="addm"){const nx=boardDates().find(x=>x>TODAY&&pd(x).getDay()===6)||TODAY;const m={id:"x"+Date.now(),team:"MB",home:true,rival:"Rival por definir",date:nx,orig:nx,pista:"",hora:"",note:"",coaches:[],coachLock:false,estado:"",custom:true};S.matches.push(m);persist();ui.sheet={id:m.id,focus:true};render();return;}
-  if(b.id==="fsadd"){const v=document.getElementById("fsnew").value;if(v&&!S.franjasSemana.includes(v)){S.franjasSemana.push(v);S.franjasSemana.sort();persist();render();}return;}
-  if(b.id==="me-copy"){copyText(mineText(ui.me),"Partidos copiados");return;}
-  if(b.id==="me-csv"){saveFile("partidos-"+slug(coachById(ui.me).name)+".csv",mineCSV(ui.me));return;}
-  if(b.id==="res-copy"){copyText(resText(),"Reservas copiadas");return;}
-  if(b.id==="res-csv"){saveFile("reservas-pista-2026-27.csv",resCSV());return;}
-  if(b.id==="padd"){S.pistas.push({id:"p"+Date.now(),name:"Pista nueva",teams:[],exc:false});persist();render();return;}
-  if(d.pdel){S.pistas=S.pistas.filter(p=>p.id!==d.pdel);S.matches.forEach(m=>{if(m.pista===d.pdel)m.pista="";});persist();render();return;}
-  if(b.id==="fadd"){const v=document.getElementById("fnew").value;if(v&&!S.franjas.includes(v)){S.franjas.push(v);S.franjas.sort();persist();render();}return;}
-  if(d.fdel){S.franjas=S.franjas.filter(f=>f!==d.fdel);persist();render();return;}
-  if(b.id==="cadd"){const v=document.getElementById("cnew").value.trim();if(v){S.coaches.push({id:"c"+Date.now(),wk:[1,2,3,4,5],busy:[],emT:[],name:v,pref:[],otros:"si",emerg:false,off:[],alt:{on:false,start:""}});persist();render();}return;}
-  if(d.cdel){S.coaches=S.coaches.filter(c=>c.id!==d.cdel);S.matches.forEach(m=>{if((m.coaches||[]).includes(d.cdel)){m.coachLock=false;}});persist();render();return;}
-  if(d.offadd){const v=document.getElementById("off-"+d.offadd).value;const c=S.coaches.find(c=>c.id===d.offadd);if(v&&c&&!c.off.includes(v)){c.off.push(v);persist();render();}return;}
-  if(d.busyadd){const c=coachById(d.busyadd);const dd=document.getElementById("bd-"+c.id).value,tp=document.getElementById("bt-"+c.id).value,hh=document.getElementById("bh-"+c.id).value;
-    if(!dd||!hh){toast("Pon el día y la hora");return;}c.busy.push(tp==="hasta"?{d:dd,desde:"00:00",hasta:hh}:{d:dd,desde:hh,hasta:"23:59"});persist();render();return;}
-  if(d.busydel){const [id,dd,ds]=d.busydel.split("|");const c=coachById(id);c.busy=c.busy.filter(b=>!(b.d===dd&&b.desde===ds));persist();render();return;}
-  if(d.offdel){const [id,day]=d.offdel.split("|");const c=S.coaches.find(c=>c.id===id);c.off=c.off.filter(x=>x!==day);persist();render();return;}
-});
-function cur(){return S.matches.find(x=>x.id===ui.sheet.id);}
-app.addEventListener("change",e=>{
-  const t=e.target,d=t.dataset;
-  if(t.id==="tg-free"){ui.showFree=t.checked;persistUI();render();return;}
-  if(t.id==="tg-past"){ui.showPast=t.checked;persistUI();render();return;}
-  if(t.id==="f-date"&&t.value){cur().date=t.value;persist();render();return;}
-  if(t.id==="f-pista"){cur().pista=t.value;persist();render();return;}
-  if(t.id==="f-hora"){const m=cur();m.hora=t.value;persist();render();if(tooLate(m))toast(`Ojo: pasa de las ${S.maxHora}`);return;}
-  if(d.maxh){if(t.value){S.maxHora=t.value;persist();render();}return;}
-  if(t.id==="f-doble"){const m=cur();AM().filter(x=>x.date===m.date&&teamsOf(x).some(k=>teamsOf(m).includes(k))).forEach(x=>x.doble=t.checked);persist();render();return;}
-  if(t.id==="f-fambase"){S.famBase=t.value.trim();persist();render();return;}
-  if(t.id==="f-sededuda"){const m=cur();m.sedeDuda=t.checked;persist();render();return;}
-  if(t.id==="f-duda"){const m=cur();m.duda=t.checked?(m.duda||true):false;persist();render();return;}
-  if(t.id==="f-note"){cur().note=t.value;persist();updStatus();return;}
-  if(d.estado){S.matches.find(x=>x.id===d.estado).estado=t.value;persist();render();return;}
-  if(d.lleg){const v=parseInt(t.value,10);if(v>=0){S.llegada[d.lleg]=v;persist();render();}return;}
-  if(d.viaje!==undefined&&t.dataset.viaje){const v=parseInt(t.value,10);if(v>=0){S.viaje[t.dataset.viaje]=v;persist();render();}return;}
-  if(d.bal){S.balance=t.checked;persist();render();return;}
-  if(d.cwk){const [id,n]=d.cwk.split("|");const c=coachById(id);const k=+n;if(t.checked){if(!c.wk.includes(k))c.wk.push(k);}else c.wk=c.wk.filter(x=>x!==k);persist();render();return;}
-  if(t.id==="f-team"){cur().team=t.value;persist();render();return;}
-  if(t.id==="f-rival"){cur().rival=t.value.trim()||"Rival por definir";persist();render();return;}
-  if(t.id==="f-sw"){ui.sheet.sw=t.checked;return;}
-  if(t.id==="f-sede"){const m=cur();m.home=t.value==="1";if(!m.home)m.pista="";const vu=vueltaOf(m);
-    if(vu&&ui.sheet.sw!==false){vu.home=!m.home;if(!vu.home)vu.pista="";}
-    persist();render();toast(vu&&ui.sheet.sw!==false?`Sede cambiada; el partido del ${fshort(vu.date)} pasa a ${vu.home?"casa":"fuera"}`:"Sede cambiada");return;}
-  if(t.id==="f-home"){const m=cur();m.home=t.value==="1";if(!m.home)m.pista="";persist();render();return;}
-  if(d.tt){const [k,f]=d.tt.split("|");const v=parseInt(t.value,10);if(v>=0){S.t[k][f]=v;persist();render();}return;}
-  if(d.susp){const k=d.susp;if(t.checked){if(!S.susp.includes(k))S.susp.push(k);}else S.susp=S.susp.filter(x=>x!==k);persist();render();return;}
-  if(d.pteam){const [id,k]=d.pteam.split("|");const p=S.pistas.find(p=>p.id===id);if(t.checked){if(!p.teams.includes(k))p.teams.push(k);}else p.teams=p.teams.filter(x=>x!==k);persist();render();return;}
-  if(d.pexc){S.pistas.find(p=>p.id===d.pexc).exc=t.checked;persist();render();return;}
-  if(d.pname){S.pistas.find(p=>p.id===d.pname).name=t.value.trim()||"Pista";persist();render();return;}
-  if(d.cname){S.coaches.find(c=>c.id===d.cname).name=t.value.trim()||"Entrenador";persist();render();return;}
-  if(d.cteam){const [id,k]=d.cteam.split("|");const c=S.coaches.find(c=>c.id===id);if(t.checked){if(!c.pref.includes(k))c.pref.push(k);}else c.pref=c.pref.filter(x=>x!==k);persist();render();return;}
-  if(d.cem){const [id,k]=d.cem.split("|");const c=coachById(id);if(t.checked){if(!c.emT.includes(k))c.emT.push(k);c.pref=c.pref.filter(x=>x!==k);}else c.emT=c.emT.filter(x=>x!==k);persist();render();return;}
-  if(d.cother){coachById(d.cother).otros=t.value;persist();render();return;}
-  if(d.cemerg){coachById(d.cemerg).emerg=t.checked;persist();render();return;}
-  if(d.calt){coachById(d.calt).alt.on=t.checked;persist();render();return;}
-  if(d.calts){coachById(d.calts).alt.start=t.value;persist();render();return;}
-  if(d.coach!==undefined&&t.id.startsWith("f-coach-")){const m=cur();const i=+d.coach;if(t.value==="auto"){m.coachLock=false;}else{const cs=teamsOf(m).map((_,j)=>(m.coaches||[])[j]||null);cs[i]=t.value||null;m.coaches=cs;m.coachLock=true;}persist();render();return;}
-});
-function updStatus(){const st=document.getElementById("st");if(st){st.textContent="Cambios sin guardar";st.className="status dirty";}const sv=document.getElementById("save");if(sv&&canSave!==false)sv.disabled=false;}
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&ui.sheet){ui.sheet=null;render();}});
-// arrastrar
-app.addEventListener("dragstart",e=>{const el=e.target.closest("[data-drag]");if(!el)return;ui.dragId=el.dataset.drag;el.classList.add("dragging");try{e.dataTransfer.setData("text/plain",ui.dragId);e.dataTransfer.effectAllowed="move";}catch(_){}});
-app.addEventListener("dragend",e=>{const el=e.target.closest("[data-drag]");if(el)el.classList.remove("dragging");document.querySelectorAll(".day.over").forEach(x=>x.classList.remove("over"));ui.dragId=null;});
-app.addEventListener("dragover",e=>{const z=e.target.closest("[data-drop]");if(!z||!ui.dragId)return;e.preventDefault();document.querySelectorAll(".day.over").forEach(x=>{if(x!==z)x.classList.remove("over");});z.classList.add("over");});
-app.addEventListener("dragleave",e=>{const z=e.target.closest("[data-drop]");if(z&&!z.contains(e.relatedTarget))z.classList.remove("over");});
-app.addEventListener("drop",e=>{const z=e.target.closest("[data-drop]");if(!z||!ui.dragId)return;e.preventDefault();const id=ui.dragId;ui.dragId=null;moveTo(id,z.dataset.drop);});
-
-function copyText(txt,ok){try{navigator.clipboard.writeText(txt).then(()=>toast(ok),()=>fallbackCopy(txt));}catch(_){fallbackCopy(txt);}}
-function mineText(cid){const c=coachById(cid);return `*${c.name}* · partidos CV Cangas de Onís\n`+myMatches(cid).map(m=>`- ${fshort(m.date)} · ${TM[teamOfCoach(m,cid)].n} ${m.home?"vs":"en"} ${m.rival}${m.hora?" · "+m.hora:""} · ${whereText(m)}`).join("\n");}
-function resText(){let last="",out="Reservas de pista · CV Cangas de Onís\n";resRows().forEach(m=>{if(m.date!==last){last=m.date;out+=`\n${flong(m.date)}\n`;}out+=`- ${m.pista?pistaName(m.pista):"Sin pista"}: ${m.hora?fromMin(span(m)[0])+"–"+endOf(m,true):"hora por definir"} · ${teamLabel(m)} vs ${m.rival}\n`;});return out;}
-function csvCell(v){v=String(v==null?"":v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
-function gDate(d){const [y,m,dd]=d.split("-");return m+"/"+dd+"/"+y;}
-function gTime(mins){mins=((mins%1440)+1440)%1440;let h=Math.floor(mins/60),mi=mins%60,ap=h>=12?"PM":"AM";h=h%12||12;return h+":"+String(mi).padStart(2,"0")+" "+ap;}
-function mineCSV(cid){const rows=[["Subject","Start Date","Start Time","End Date","End Time","All Day Event","Location","Description"]];
-  myMatches(cid).forEach(m=>{const t=TM[teamOfCoach(m,cid)].n;const sp=cspan(m);
-    rows.push([`${t} ${m.home?"vs":"en"} ${m.rival}`,gDate(m.date),sp?gTime(sp[0]):"",gDate(m.date),sp?gTime(sp[1]):"",sp?"False":"True",m.home?(m.pista?pistaName(m.pista):"Cangas de Onís"):m.rival,`${m.home?"En casa":"Fuera"}${m.hora?" · partido a las "+m.hora:""} · ${whereText(m)}`]);});
-  return rows.map(r=>r.map(csvCell).join(",")).join("\r\n");}
-function resCSV(){const rows=[["Fecha","Pista","Reserva desde","Reserva hasta","Inicio partido","Equipo","Rival"]];resRows().forEach(m=>rows.push([m.date,m.pista?pistaName(m.pista):"",m.hora?fromMin(span(m)[0]):"",m.hora?endOf(m,true):"",m.hora||"",teamLabel(m),m.rival]));return rows.map(r=>r.map(csvCell).join(",")).join("\r\n");}
-async function saveFile(name,data,raw){if(!DL){toast("Las descargas no están disponibles aquí");return;}try{await DL.save({filename:name,data:raw?data:"\ufeff"+data});}catch(e){if(e&&e.code==="declined")return;toast("No se pudo descargar el archivo");}}
-let offBusy=false;
-async function toggleOff(cid,d){const c=coachById(cid);if(!c)return;
-  if(c.off.includes(d)){c.off=c.off.filter(x=>x!==d);persist();render();return;}
-  if(DB){if(offBusy)return;offBusy=true;const cur=(DBOFF[cid]||[]).slice();const next=cur.includes(d)?cur.filter(x=>x!==d):cur.concat([d]).sort();
-    DBOFF[cid]=next;reassignAll();render();
-    try{await DB.doc("disponibilidad/"+cid).set({off:next});}catch(e){DBOFF[cid]=cur;reassignAll();render();toast("No se pudo guardar. ¿Tienes permiso para editar esta página?");}
-    offBusy=false;return;}
-  c.off.push(d);persist();render();}
-function copyChanges(){
-  const mv=AM().filter(m=>m.date!==m.orig).sort((a,b)=>a.orig.localeCompare(b.orig));
-  const txt="CV Cangas de Onís · cambios de fecha propuestos (temporada 2026-27)\n\n"+mv.map(m=>`- ${teamLabel(m)} (${TM[m.team].c}): ${m.home?"CV Cangas – "+m.rival:m.rival+" – CV Cangas"} · del ${flong(m.orig)} al ${flong(m.date)}${m.hora?" a las "+m.hora:""} [${ESTL[m.estado||"propuesto"]}]${m.note?" ("+m.note+")":""}`).join("\n");
-  const done=()=>toast("Resumen copiado");
-  try{navigator.clipboard.writeText(txt).then(done,()=>fallbackCopy(txt));}catch(_){fallbackCopy(txt);}
-}
-function fallbackCopy(txt){const ta=document.createElement("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();let ok=false;try{ok=document.execCommand("copy");}catch(_){}ta.remove();toast(ok?"Resumen copiado":"No se pudo copiar; selecciona el texto en la tabla");}
-
-// ---------- guardar versión (capability artifact) ----------
-const RESET=':root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}';
-function buildDoc(state){
-  const style=document.querySelector("style[data-app]")||document.querySelectorAll("style")[document.querySelectorAll("style").length-1];
-  const links=[...document.querySelectorAll('link[href^="https://fonts.g"]')].map(l=>l.outerHTML).join("");
-  const scr=document.getElementById("app-script").textContent;
-  const json=JSON.stringify(state).replace(/</g,"\\u003c");
-  const SC="scr"+"ipt";
-  return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>'+RESET+'</style></head><body>'+
-    '<title>Planificador CV Cangas</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n'+links+'\n<style data-app>'+style.textContent+'</style>\n<div id="app"></div>\n<'+SC+' type="application/json" id="state">'+json+'</'+SC+'>\n<'+SC+' id="app-script">'+scr+'</'+SC+'>\n</body></html>';
-}
-async function save(){
-  const btn=document.getElementById("save");
-  if(!artifactApi){toast("Guardar no está disponible aquí; los cambios siguen en este navegador");return;}
-  btn.disabled=true;btn.textContent="Guardando…";
-  const st=JSON.parse(JSON.stringify(S));st.savedAt=Date.now();
-  try{
-    try{localStorage.removeItem(LSKEY);}catch(_){}
-    await artifactApi.publish(buildDoc(st));
-  }catch(err){
-    const code=err&&err.code;
-    try{localStorage.setItem(LSKEY,JSON.stringify({baseSavedAt:base.savedAt||0,state:S,matches:1}));}catch(_){}
-    if(code==="conflict"){toast("Otra persona guardó antes; se carga su versión");return;}
-    if(code==="not_granted"||code==="not_writer"){canSave=false;render();return;}
-    btn.disabled=false;btn.textContent="Guardar versión";toast("No se pudo guardar. Inténtalo otra vez.");
-  }
-}
-
-function goViewer(){if(ui.staff){if(!ui.ro){ui.ro=true;S=JSON.parse(JSON.stringify(base));dirty=false;reassignAll();}render();return;}if(ui.fam===null){ui.fam="";render();}}
-function readHash(){try{const hs=decodeURIComponent((location.hash||"").slice(1));if(hs===STAFF||hs.startsWith(STAFF+"/")){ui.staff=true;ui.fam=null;const hc=S.coaches.find(c=>slug(c.name)===hs.slice(STAFF.length+1));if(hc){ui.tab="yo";ui.me=hc.id;}return true;}const tk=TEAMS.find(t=>famSlug(t.k)===hs);if(tk){ui.fam=tk.k;return true;}if(hs==="familias"){ui.fam="";return true;}}catch(_){}return false;}
-readHash();
-window.addEventListener("hashchange",()=>{if(readHash())render();});
-try{const hs=decodeURIComponent((location.hash||"").slice(1));const hc=S.coaches.find(c=>slug(c.name)===hs);if(hc){ui.tab="yo";ui.me=hc.id;}}catch(_){}
-reassignAll();
-render();
-(async()=>{
-  if(window.claude&&window.claude.use){
-    window.claude.use("downloads").then(x=>{DL=x;if(x)render();}).catch(()=>{});
-    window.claude.use("db").then(x=>{DB=x;if(!x)return;try{x.collection("disponibilidad").onSnapshot(snap=>{const o={};snap.docs.forEach(dc=>{const v=dc.data();if(v&&Array.isArray(v.off))o[dc.id]=v.off.filter(z=>typeof z==="string"&&/^\d{4}-\d\d-\d\d$/.test(z));});DBOFF=o;reassignAll();render();},()=>{});}catch(_){}render();}).catch(()=>{});
-  }
-  try{const us=window.claude&&window.claude.use?await window.claude.use("user"):null;const can=us&&typeof us.canEdit==="function"?await us.canEdit():false;if(!can)goViewer();}catch(_){goViewer();}
-  try{artifactApi=window.claude&&window.claude.use?await window.claude.use("artifact"):null;}catch(_){artifactApi=null;}
-  if(!artifactApi){canSave=null;}
-  render();
-})();
-})();
-</script>
-
-</body></html>
+window.addEventListener("hashchange",show);show();})();</script></body></html>
