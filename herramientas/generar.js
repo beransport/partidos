@@ -1,5 +1,6 @@
 // Genera la web de familias (index.html) a partir del HTML del planificador.
 // Uso: node herramientas/generar.js <planificador.html> <salida.html>
+process.env.TZ="Europe/Madrid";
 const fs=require('fs');
 const [,,src,out]=process.argv;
 if(!src||!out){console.error("Uso: node generar.js planificador.html index.html");process.exit(2);}
